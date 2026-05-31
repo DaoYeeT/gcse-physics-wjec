@@ -19,11 +19,11 @@
   "dependencies": {
     "@mdx-js/loader": "3.1.0",
     "@mdx-js/react": "3.1.0",
-    "@next/mdx": "15.0.3",
+    "@next/mdx": "16.2.6",
     "@types/mdx": "2.0.13",
     "clsx": "2.1.1",
     "katex": "0.16.11",
-    "next": "15.0.3",
+    "next": "16.2.6",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-markdown": "9.0.1",
@@ -33,7 +33,7 @@
     "zod": "3.23.8"
   },
   "devDependencies": {
-    "@playwright/test": "1.49.0",
+    "@playwright/test": "1.60.0",
     "@testing-library/dom": "10.4.0",
     "@testing-library/react": "16.1.0",
     "@types/node": "22.9.0",
@@ -43,7 +43,7 @@
     "@vitest/coverage-v8": "2.1.5",
     "autoprefixer": "10.4.20",
     "eslint": "9.15.0",
-    "eslint-config-next": "15.0.3",
+    "eslint-config-next": "16.2.6",
     "happy-dom": "15.11.0",
     "postcss": "8.4.49",
     "tailwindcss": "3.4.15",
