@@ -43,7 +43,7 @@ if (!lastMatch) {
 
 interface RawQuestion {
   id: string;
-  topic: string;
+  topic?: string;
   topic_id?: string;
   higher_only: boolean;
   type: string;
@@ -78,7 +78,8 @@ const raw = JSON.parse(lastMatch[1]) as RawQuestion[];
 
 // Map dotted topic prefix → sub-topic id. Each topic in this build has one
 // sub-topic with id "<unit>-<topic>-1" (so 1.1 → 1-1-1, 2.9 → 2-9-1, etc.).
-function topicCodeToSubTopicId(topic: string): string {
+function topicCodeToSubTopicId(topic: string | undefined): string {
+  if (!topic) throw new Error('Missing topic field on raw question');
   const codeMatch = /^(\d+)\.(\d+)/.exec(topic);
   if (!codeMatch) throw new Error(`Cannot parse topic code from: "${topic}"`);
   return `${codeMatch[1]}-${codeMatch[2]}-1`;
