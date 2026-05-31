@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getSubTopicById } from '@/lib/content/loader';
+import { getKnowledgeCard } from '@/content/knowledge';
 import { PaperPage } from '@/components/ui/PaperPage';
 
 interface Props {
@@ -13,13 +14,7 @@ export default async function TopicPage({ params }: Props) {
   if (!found) notFound();
   const { unit, topic, subTopic } = found;
 
-  let Knowledge: React.ComponentType | null = null;
-  try {
-    const mod = await import(`@/content/knowledge/${slug}.mdx`);
-    Knowledge = mod.default;
-  } catch {
-    Knowledge = null;
-  }
+  const Knowledge = getKnowledgeCard(slug);
 
   return (
     <PaperPage>
