@@ -2,15 +2,997 @@
   "board": "WJEC",
   "qualification": "GCSE Physics (Higher Tier)",
   "specCode": "3420QS",
-  "units": [{
-    "id": "unit-1", "title": "Electricity, Energy and Waves",
-    "duration_min": 105, "total_marks": 80,
-    "topics": [{
-      "id": "1-1", "title": "Electric circuits", "weight": 0.10, "higher_only": false,
-      "sub_topics": [{ "id": "1-1-1", "title": "Current, p.d. and resistance", "higher_only": false }]
-    }]
-  }],
-  "equations_sheet": [{ "name": "Ohm's law", "latex": "V = IR", "variables": [] }],
-  "constants": [{ "symbol": "g", "value": 10, "unit": "N/kg", "context": "WJEC convention" }],
-  "ao_weights": { "AO1": 0.40, "AO2": 0.40, "AO3": 0.20 }
+  "units": [
+    {
+      "id": "unit-1",
+      "title": "Electricity, Energy and Waves",
+      "duration_min": 105,
+      "total_marks": 80,
+      "topics": [
+        {
+          "id": "1-1",
+          "title": "Electric circuits",
+          "weight": 0.16,
+          "higher_only": false,
+          "sub_topics": [
+            {
+              "id": "1-1-1",
+              "title": "Current, p.d. and resistance",
+              "higher_only": false
+            }
+          ]
+        },
+        {
+          "id": "1-2",
+          "title": "Generating electricity",
+          "weight": 0.13,
+          "higher_only": false,
+          "sub_topics": [
+            {
+              "id": "1-2-1",
+              "title": "Generation, the National Grid and energy resources",
+              "higher_only": false
+            }
+          ]
+        },
+        {
+          "id": "1-3",
+          "title": "Making use of energy",
+          "weight": 0.11,
+          "higher_only": false,
+          "sub_topics": [
+            {
+              "id": "1-3-1",
+              "title": "Heat transfer, density and energy efficiency",
+              "higher_only": false
+            }
+          ]
+        },
+        {
+          "id": "1-4",
+          "title": "Domestic electricity",
+          "weight": 0.11,
+          "higher_only": false,
+          "sub_topics": [
+            {
+              "id": "1-4-1",
+              "title": "Mains electricity, safety devices and energy cost",
+              "higher_only": false
+            }
+          ]
+        },
+        {
+          "id": "1-5",
+          "title": "Features of waves",
+          "weight": 0.12,
+          "higher_only": false,
+          "sub_topics": [
+            {
+              "id": "1-5-1",
+              "title": "Wave properties and the EM spectrum",
+              "higher_only": false
+            }
+          ]
+        },
+        {
+          "id": "1-6",
+          "title": "Total internal reflection of waves",
+          "weight": 0.07,
+          "higher_only": false,
+          "sub_topics": [
+            {
+              "id": "1-6-1",
+              "title": "Critical angle, optical fibres and medical imaging",
+              "higher_only": false
+            }
+          ]
+        },
+        {
+          "id": "1-7",
+          "title": "Seismic waves",
+          "weight": 0.07,
+          "higher_only": false,
+          "sub_topics": [
+            {
+              "id": "1-7-1",
+              "title": "P-waves, S-waves and the Earth's interior",
+              "higher_only": false
+            }
+          ]
+        },
+        {
+          "id": "1-8",
+          "title": "Kinetic theory",
+          "weight": 0.13,
+          "higher_only": false,
+          "sub_topics": [
+            {
+              "id": "1-8-1",
+              "title": "Gas laws, specific heat and latent heat",
+              "higher_only": false
+            }
+          ]
+        },
+        {
+          "id": "1-9",
+          "title": "Electromagnetism",
+          "weight": 0.1,
+          "higher_only": false,
+          "sub_topics": [
+            {
+              "id": "1-9-1",
+              "title": "Motor effect, induction and transformers",
+              "higher_only": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit-2",
+      "title": "Forces, Space and Radioactivity",
+      "duration_min": 105,
+      "total_marks": 80,
+      "topics": [
+        {
+          "id": "2-1",
+          "title": "Distance, speed and acceleration",
+          "weight": 0.12,
+          "higher_only": false,
+          "sub_topics": [
+            {
+              "id": "2-1-1",
+              "title": "Kinematics, motion graphs and stopping distance",
+              "higher_only": false
+            }
+          ]
+        },
+        {
+          "id": "2-2",
+          "title": "Newton's laws",
+          "weight": 0.11,
+          "higher_only": false,
+          "sub_topics": [
+            {
+              "id": "2-2-1",
+              "title": "Forces, inertia, weight and terminal velocity",
+              "higher_only": false
+            }
+          ]
+        },
+        {
+          "id": "2-3",
+          "title": "Work and energy",
+          "weight": 0.13,
+          "higher_only": false,
+          "sub_topics": [
+            {
+              "id": "2-3-1",
+              "title": "Work, KE, GPE and Hooke's law",
+              "higher_only": false
+            }
+          ]
+        },
+        {
+          "id": "2-4",
+          "title": "Further motion concepts",
+          "weight": 0.16,
+          "higher_only": false,
+          "sub_topics": [
+            {
+              "id": "2-4-1",
+              "title": "suvat, momentum and moments",
+              "higher_only": true
+            }
+          ]
+        },
+        {
+          "id": "2-5",
+          "title": "Stars and planets",
+          "weight": 0.09,
+          "higher_only": false,
+          "sub_topics": [
+            {
+              "id": "2-5-1",
+              "title": "Solar system, stellar evolution and H-R diagram",
+              "higher_only": false
+            }
+          ]
+        },
+        {
+          "id": "2-6",
+          "title": "The Universe",
+          "weight": 0.07,
+          "higher_only": false,
+          "sub_topics": [
+            {
+              "id": "2-6-1",
+              "title": "Red shift, expansion and the Big Bang",
+              "higher_only": true
+            }
+          ]
+        },
+        {
+          "id": "2-7",
+          "title": "Types of radiation",
+          "weight": 0.11,
+          "higher_only": false,
+          "sub_topics": [
+            {
+              "id": "2-7-1",
+              "title": "Atomic structure, alpha, beta and gamma radiation",
+              "higher_only": false
+            }
+          ]
+        },
+        {
+          "id": "2-8",
+          "title": "Half-life",
+          "weight": 0.11,
+          "higher_only": false,
+          "sub_topics": [
+            {
+              "id": "2-8-1",
+              "title": "Activity, half-life and uses of radioisotopes",
+              "higher_only": false
+            }
+          ]
+        },
+        {
+          "id": "2-9",
+          "title": "Nuclear decay and nuclear energy",
+          "weight": 0.1,
+          "higher_only": true,
+          "sub_topics": [
+            {
+              "id": "2-9-1",
+              "title": "Fission, fusion and reactor design",
+              "higher_only": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "equations_sheet": [
+    {
+      "name": "Ohm's law",
+      "latex": "I = V/R",
+      "variables": [
+        {
+          "symbol": "I",
+          "name": "Current",
+          "unit": "A"
+        },
+        {
+          "symbol": "V",
+          "name": "Potential difference",
+          "unit": "V"
+        },
+        {
+          "symbol": "R",
+          "name": "Resistance",
+          "unit": "Ω"
+        }
+      ]
+    },
+    {
+      "name": "Resistors in series",
+      "latex": "R = R_1 + R_2",
+      "variables": [
+        {
+          "symbol": "R",
+          "name": "Total resistance",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "R_1",
+          "name": "Resistance 1",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "R_2",
+          "name": "Resistance 2",
+          "unit": "Ω"
+        }
+      ]
+    },
+    {
+      "name": "Energy transferred",
+      "latex": "E = Pt",
+      "variables": [
+        {
+          "symbol": "E",
+          "name": "Energy",
+          "unit": "J"
+        },
+        {
+          "symbol": "P",
+          "name": "Power",
+          "unit": "W"
+        },
+        {
+          "symbol": "t",
+          "name": "Time",
+          "unit": "s"
+        }
+      ]
+    },
+    {
+      "name": "Electrical power",
+      "latex": "P = VI",
+      "variables": [
+        {
+          "symbol": "P",
+          "name": "Power",
+          "unit": "W"
+        },
+        {
+          "symbol": "V",
+          "name": "Potential difference",
+          "unit": "V"
+        },
+        {
+          "symbol": "I",
+          "name": "Current",
+          "unit": "A"
+        }
+      ]
+    },
+    {
+      "name": "Percentage efficiency",
+      "latex": "\\% \\text{ efficiency} = \\frac{\\text{useful energy or power}}{\\text{total energy or power}} \\times 100",
+      "variables": []
+    },
+    {
+      "name": "Density",
+      "latex": "\\rho = m/V",
+      "variables": [
+        {
+          "symbol": "\\rho",
+          "name": "Density",
+          "unit": "kg/m³"
+        },
+        {
+          "symbol": "m",
+          "name": "Mass",
+          "unit": "kg"
+        },
+        {
+          "symbol": "V",
+          "name": "Volume",
+          "unit": "m³"
+        }
+      ]
+    },
+    {
+      "name": "Energy used (domestic)",
+      "latex": "\\text{units (kWh)} = P\\text{(kW)} \\times t\\text{(h)}",
+      "variables": []
+    },
+    {
+      "name": "Cost of electricity",
+      "latex": "\\text{cost} = \\text{units} \\times \\text{cost per unit}",
+      "variables": []
+    },
+    {
+      "name": "Wave equation",
+      "latex": "v = \\lambda f",
+      "variables": [
+        {
+          "symbol": "v",
+          "name": "Wave speed",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "\\lambda",
+          "name": "Wavelength",
+          "unit": "m"
+        },
+        {
+          "symbol": "f",
+          "name": "Frequency",
+          "unit": "Hz"
+        }
+      ]
+    },
+    {
+      "name": "Speed",
+      "latex": "\\text{speed} = \\text{distance}/\\text{time}",
+      "variables": []
+    },
+    {
+      "name": "Pressure",
+      "latex": "p = F/A",
+      "variables": [
+        {
+          "symbol": "p",
+          "name": "Pressure",
+          "unit": "Pa"
+        },
+        {
+          "symbol": "F",
+          "name": "Force",
+          "unit": "N"
+        },
+        {
+          "symbol": "A",
+          "name": "Area",
+          "unit": "m²"
+        }
+      ]
+    },
+    {
+      "name": "Specific heat capacity",
+      "latex": "\\Delta Q = m c \\Delta\\theta",
+      "variables": [
+        {
+          "symbol": "\\Delta Q",
+          "name": "Energy",
+          "unit": "J"
+        },
+        {
+          "symbol": "m",
+          "name": "Mass",
+          "unit": "kg"
+        },
+        {
+          "symbol": "c",
+          "name": "Specific heat capacity",
+          "unit": "J/(kg·°C)"
+        },
+        {
+          "symbol": "\\Delta\\theta",
+          "name": "Temperature change",
+          "unit": "°C"
+        }
+      ]
+    },
+    {
+      "name": "Specific latent heat",
+      "latex": "Q = mL",
+      "variables": [
+        {
+          "symbol": "Q",
+          "name": "Energy",
+          "unit": "J"
+        },
+        {
+          "symbol": "m",
+          "name": "Mass",
+          "unit": "kg"
+        },
+        {
+          "symbol": "L",
+          "name": "Specific latent heat",
+          "unit": "J/kg"
+        }
+      ]
+    },
+    {
+      "name": "Transformer ratio",
+      "latex": "V_1/V_2 = N_1/N_2",
+      "variables": [
+        {
+          "symbol": "V_1",
+          "name": "Primary p.d.",
+          "unit": "V"
+        },
+        {
+          "symbol": "V_2",
+          "name": "Secondary p.d.",
+          "unit": "V"
+        },
+        {
+          "symbol": "N_1",
+          "name": "Primary turns",
+          "unit": ""
+        },
+        {
+          "symbol": "N_2",
+          "name": "Secondary turns",
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "name": "Resistors in parallel",
+      "latex": "1/R = 1/R_1 + 1/R_2",
+      "variables": [
+        {
+          "symbol": "R",
+          "name": "Total resistance",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "R_1",
+          "name": "Resistance 1",
+          "unit": "Ω"
+        },
+        {
+          "symbol": "R_2",
+          "name": "Resistance 2",
+          "unit": "Ω"
+        }
+      ],
+      "higher_only": true
+    },
+    {
+      "name": "Power dissipation",
+      "latex": "P = I^2 R",
+      "variables": [
+        {
+          "symbol": "P",
+          "name": "Power",
+          "unit": "W"
+        },
+        {
+          "symbol": "I",
+          "name": "Current",
+          "unit": "A"
+        },
+        {
+          "symbol": "R",
+          "name": "Resistance",
+          "unit": "Ω"
+        }
+      ],
+      "higher_only": true
+    },
+    {
+      "name": "Combined gas law",
+      "latex": "pV/T = \\text{constant}",
+      "variables": [
+        {
+          "symbol": "p",
+          "name": "Pressure",
+          "unit": "Pa"
+        },
+        {
+          "symbol": "V",
+          "name": "Volume",
+          "unit": "m³"
+        },
+        {
+          "symbol": "T",
+          "name": "Temperature",
+          "unit": "K"
+        }
+      ],
+      "higher_only": true
+    },
+    {
+      "name": "Celsius to kelvin",
+      "latex": "T/K = \\theta/°C + 273",
+      "variables": [],
+      "higher_only": true
+    },
+    {
+      "name": "Motor force",
+      "latex": "F = BIl",
+      "variables": [
+        {
+          "symbol": "F",
+          "name": "Force",
+          "unit": "N"
+        },
+        {
+          "symbol": "B",
+          "name": "Magnetic flux density",
+          "unit": "T"
+        },
+        {
+          "symbol": "I",
+          "name": "Current",
+          "unit": "A"
+        },
+        {
+          "symbol": "l",
+          "name": "Length of conductor",
+          "unit": "m"
+        }
+      ],
+      "higher_only": true
+    },
+    {
+      "name": "Acceleration",
+      "latex": "a = \\Delta v / t",
+      "variables": [
+        {
+          "symbol": "a",
+          "name": "Acceleration",
+          "unit": "m/s²"
+        },
+        {
+          "symbol": "\\Delta v",
+          "name": "Change in velocity",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "t",
+          "name": "Time",
+          "unit": "s"
+        }
+      ]
+    },
+    {
+      "name": "Newton's second law",
+      "latex": "F = ma",
+      "variables": [
+        {
+          "symbol": "F",
+          "name": "Resultant force",
+          "unit": "N"
+        },
+        {
+          "symbol": "m",
+          "name": "Mass",
+          "unit": "kg"
+        },
+        {
+          "symbol": "a",
+          "name": "Acceleration",
+          "unit": "m/s²"
+        }
+      ]
+    },
+    {
+      "name": "Weight",
+      "latex": "W = mg",
+      "variables": [
+        {
+          "symbol": "W",
+          "name": "Weight",
+          "unit": "N"
+        },
+        {
+          "symbol": "m",
+          "name": "Mass",
+          "unit": "kg"
+        },
+        {
+          "symbol": "g",
+          "name": "Gravitational field strength",
+          "unit": "N/kg"
+        }
+      ]
+    },
+    {
+      "name": "Work done",
+      "latex": "W = Fd",
+      "variables": [
+        {
+          "symbol": "W",
+          "name": "Work done",
+          "unit": "J"
+        },
+        {
+          "symbol": "F",
+          "name": "Force",
+          "unit": "N"
+        },
+        {
+          "symbol": "d",
+          "name": "Distance",
+          "unit": "m"
+        }
+      ]
+    },
+    {
+      "name": "Hooke's law",
+      "latex": "F = kx",
+      "variables": [
+        {
+          "symbol": "F",
+          "name": "Force",
+          "unit": "N"
+        },
+        {
+          "symbol": "k",
+          "name": "Spring constant",
+          "unit": "N/m"
+        },
+        {
+          "symbol": "x",
+          "name": "Extension",
+          "unit": "m"
+        }
+      ]
+    },
+    {
+      "name": "Momentum",
+      "latex": "p = mv",
+      "variables": [
+        {
+          "symbol": "p",
+          "name": "Momentum",
+          "unit": "kg·m/s"
+        },
+        {
+          "symbol": "m",
+          "name": "Mass",
+          "unit": "kg"
+        },
+        {
+          "symbol": "v",
+          "name": "Velocity",
+          "unit": "m/s"
+        }
+      ]
+    },
+    {
+      "name": "Force and momentum",
+      "latex": "F = \\Delta p / t",
+      "variables": [
+        {
+          "symbol": "F",
+          "name": "Force",
+          "unit": "N"
+        },
+        {
+          "symbol": "\\Delta p",
+          "name": "Change in momentum",
+          "unit": "kg·m/s"
+        },
+        {
+          "symbol": "t",
+          "name": "Time",
+          "unit": "s"
+        }
+      ]
+    },
+    {
+      "name": "Kinematics (v from u)",
+      "latex": "v = u + at",
+      "variables": [
+        {
+          "symbol": "v",
+          "name": "Final velocity",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "u",
+          "name": "Initial velocity",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "a",
+          "name": "Acceleration",
+          "unit": "m/s²"
+        },
+        {
+          "symbol": "t",
+          "name": "Time",
+          "unit": "s"
+        }
+      ]
+    },
+    {
+      "name": "Kinematics (average)",
+      "latex": "x = (u+v)t/2",
+      "variables": [
+        {
+          "symbol": "x",
+          "name": "Displacement",
+          "unit": "m"
+        },
+        {
+          "symbol": "u",
+          "name": "Initial velocity",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "v",
+          "name": "Final velocity",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "t",
+          "name": "Time",
+          "unit": "s"
+        }
+      ]
+    },
+    {
+      "name": "Moment",
+      "latex": "M = Fd",
+      "variables": [
+        {
+          "symbol": "M",
+          "name": "Moment",
+          "unit": "N·m"
+        },
+        {
+          "symbol": "F",
+          "name": "Force",
+          "unit": "N"
+        },
+        {
+          "symbol": "d",
+          "name": "Perpendicular distance",
+          "unit": "m"
+        }
+      ]
+    },
+    {
+      "name": "Kinetic energy",
+      "latex": "KE = \\tfrac{1}{2} m v^2",
+      "variables": [
+        {
+          "symbol": "KE",
+          "name": "Kinetic energy",
+          "unit": "J"
+        },
+        {
+          "symbol": "m",
+          "name": "Mass",
+          "unit": "kg"
+        },
+        {
+          "symbol": "v",
+          "name": "Velocity",
+          "unit": "m/s"
+        }
+      ],
+      "higher_only": true
+    },
+    {
+      "name": "Gravitational PE",
+      "latex": "PE = mgh",
+      "variables": [
+        {
+          "symbol": "PE",
+          "name": "Gravitational PE",
+          "unit": "J"
+        },
+        {
+          "symbol": "m",
+          "name": "Mass",
+          "unit": "kg"
+        },
+        {
+          "symbol": "g",
+          "name": "Gravitational field strength",
+          "unit": "N/kg"
+        },
+        {
+          "symbol": "h",
+          "name": "Change in height",
+          "unit": "m"
+        }
+      ],
+      "higher_only": true
+    },
+    {
+      "name": "Elastic PE (spring)",
+      "latex": "W = \\tfrac{1}{2} F x",
+      "variables": [
+        {
+          "symbol": "W",
+          "name": "Work done in stretching",
+          "unit": "J"
+        },
+        {
+          "symbol": "F",
+          "name": "Force",
+          "unit": "N"
+        },
+        {
+          "symbol": "x",
+          "name": "Extension",
+          "unit": "m"
+        }
+      ],
+      "higher_only": true
+    },
+    {
+      "name": "Kinematics (x from t)",
+      "latex": "x = ut + \\tfrac{1}{2} a t^2",
+      "variables": [
+        {
+          "symbol": "x",
+          "name": "Displacement",
+          "unit": "m"
+        },
+        {
+          "symbol": "u",
+          "name": "Initial velocity",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "a",
+          "name": "Acceleration",
+          "unit": "m/s²"
+        },
+        {
+          "symbol": "t",
+          "name": "Time",
+          "unit": "s"
+        }
+      ],
+      "higher_only": true
+    },
+    {
+      "name": "Kinematics (no time)",
+      "latex": "v^2 = u^2 + 2ax",
+      "variables": [
+        {
+          "symbol": "v",
+          "name": "Final velocity",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "u",
+          "name": "Initial velocity",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "a",
+          "name": "Acceleration",
+          "unit": "m/s²"
+        },
+        {
+          "symbol": "x",
+          "name": "Displacement",
+          "unit": "m"
+        }
+      ],
+      "higher_only": true
+    }
+  ],
+  "constants": [
+    {
+      "symbol": "g",
+      "value": 10,
+      "unit": "N/kg",
+      "context": "Gravitational field strength on Earth (WJEC convention)"
+    },
+    {
+      "symbol": "c",
+      "value": 300000000,
+      "unit": "m/s",
+      "context": "Speed of light/EM waves in vacuum"
+    },
+    {
+      "symbol": "c_water",
+      "value": 4200,
+      "unit": "J/(kg·°C)",
+      "context": "Specific heat capacity of water"
+    },
+    {
+      "symbol": "c_Al",
+      "value": 880,
+      "unit": "J/(kg·°C)",
+      "context": "Specific heat capacity of aluminium"
+    },
+    {
+      "symbol": "rho_water",
+      "value": 1000,
+      "unit": "kg/m³",
+      "context": "Density of water"
+    },
+    {
+      "symbol": "ly",
+      "value": 9460000000000000,
+      "unit": "m",
+      "context": "One light-year"
+    },
+    {
+      "symbol": "AU",
+      "value": 150000000000,
+      "unit": "m",
+      "context": "One astronomical unit (Sun-Earth distance)"
+    },
+    {
+      "symbol": "0K",
+      "value": -273,
+      "unit": "°C",
+      "context": "Absolute zero"
+    }
+  ],
+  "ao_weights": {
+    "AO1": 0.4,
+    "AO2": 0.4,
+    "AO3": 0.2
+  }
 }
