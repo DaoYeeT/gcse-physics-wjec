@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'katex/dist/katex.min.css';
+
+:root {
+  --font-serif: 'Source Serif Pro', Charter, Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+html { color-scheme: light; }
+body { background: theme('colors.paper.DEFAULT'); color: theme('colors.paper.ink'); }
+
+.lined-area {
+  background-image: theme('backgroundImage.lined');
+  background-attachment: local;
+  line-height: 22px;
+  padding-top: 1px;
+}
