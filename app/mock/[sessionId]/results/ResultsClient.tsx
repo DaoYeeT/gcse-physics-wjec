@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import type { QuestionBank } from '@/lib/content/schema';
 import { sessionStore, type SessionState } from '@/lib/storage/session';
 import { gradeSession, type SessionResult } from '@/lib/mock-paper/grade-session';
-import { recordAttempt } from '@/lib/storage/progress';
+import { recordAttempt, getProgress } from '@/lib/storage/progress';
 import { PaperPage } from '@/components/ui/PaperPage';
 import { ResultsBreakdown } from '@/components/results/ResultsBreakdown';
 import { PerQuestionReview } from '@/components/results/PerQuestionReview';
@@ -19,7 +19,10 @@ export function ResultsClient({ sessionId, bank }: { sessionId: string; bank: Qu
       const r = gradeSession({ session: s, bank });
       setResult(r);
       const pct = r.totalMarks === 0 ? 0 : (r.totalAwarded / r.totalMarks) * 100;
-      recordAttempt(sessionId, s.mode, pct);
+      const progress = getProgress();
+      if (!progress.attempts.some((a) => a.sessionId === sessionId)) {
+        recordAttempt(sessionId, s.mode, pct);
+      }
     }
   }, [sessionId, bank]);
 
