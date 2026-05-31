@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { clsx } from 'clsx';
 import { loadSpec } from '@/lib/content/loader';
+import { Math } from '@/components/ui/Math';
 
 export function DataBookletDrawer() {
   const [open, setOpen] = useState(false);
@@ -32,11 +33,11 @@ export function DataBookletDrawer() {
           <h3 className="mt-6 font-semibold">Equations</h3>
           <ul className="mt-2 space-y-1">
             {spec.equations_sheet.map((eq, i) => (
-              <li key={i} className="font-serif">
-                <span className="text-paper-muted">{eq.name}:</span>{' '}
-                <span className="font-mono">{eq.latex}</span>
+              <li key={i} className="flex flex-wrap items-baseline gap-x-3 font-serif">
+                <Math tex={eq.latex} />
+                <span className="text-sm text-paper-muted">{eq.name}</span>
                 {eq.higher_only && (
-                  <span className="ml-2 rounded bg-paper-accent px-1.5 py-0.5 font-sans text-[0.65rem] uppercase text-paper">H</span>
+                  <span className="rounded bg-paper-accent px-1.5 py-0.5 font-sans text-[0.65rem] uppercase text-paper">H</span>
                 )}
               </li>
             ))}
@@ -44,8 +45,10 @@ export function DataBookletDrawer() {
           <h3 className="mt-6 font-semibold">Constants</h3>
           <ul className="mt-2 space-y-1 font-serif">
             {spec.constants.map((c, i) => (
-              <li key={i}>
-                <span className="font-mono">{c.symbol} = {c.value} {c.unit}</span>
+              <li key={i} className="font-serif">
+                <Math tex={`${c.symbol} = ${c.value}`} />
+                {' '}
+                <span>{c.unit}</span>
                 {c.context && <span className="text-paper-muted"> — {c.context}</span>}
               </li>
             ))}

@@ -26,8 +26,9 @@ export default function Home() {
           </p>
         </Link>
       </div>
-      <div className="mt-10 text-sm">
-        <Link href="/history" className="font-sans text-paper-muted hover:text-paper-ink">View past attempts →</Link>
+      <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-sans">
+        <Link href="/formulas" className="text-paper-muted hover:text-paper-ink">Equation sheet →</Link>
+        <Link href="/history" className="text-paper-muted hover:text-paper-ink">View past attempts →</Link>
       </div>
     </PaperPage>
   );
