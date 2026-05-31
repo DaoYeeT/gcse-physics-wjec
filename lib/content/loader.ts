@@ -22,7 +22,9 @@ export function getQuestionById(id: string) {
 }
 
 export function getQuestionsByTopic(topicId: string) {
-  return loadQuestions().filter((q) => q.topic_id.startsWith(topicId));
+  return loadQuestions().filter(
+    (q) => q.topic_id === topicId || q.topic_id.startsWith(topicId + '-'),
+  );
 }
 
 export function getSubTopicById(subTopicId: string) {
