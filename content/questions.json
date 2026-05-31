@@ -1,0 +1,8 @@
+[
+  {
+    "id": "q-elec-001", "topic_id": "1-1-1", "higher_only": false, "type": "mcq",
+    "prompt": "Which conductor has the lowest resistivity at room temperature?", "marks": 1,
+    "assessment_objective": "AO1", "difficulty": 1,
+    "options": ["silver", "copper", "iron", "nichrome"], "correct_index": 0
+  }
+]

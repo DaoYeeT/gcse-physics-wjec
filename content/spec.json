@@ -1,0 +1,16 @@
+{
+  "board": "WJEC",
+  "qualification": "GCSE Physics (Higher Tier)",
+  "specCode": "3420QS",
+  "units": [{
+    "id": "unit-1", "title": "Electricity, Energy and Waves",
+    "duration_min": 105, "total_marks": 80,
+    "topics": [{
+      "id": "1-1", "title": "Electric circuits", "weight": 0.10, "higher_only": false,
+      "sub_topics": [{ "id": "1-1-1", "title": "Current, p.d. and resistance", "higher_only": false }]
+    }]
+  }],
+  "equations_sheet": [{ "name": "Ohm's law", "latex": "V = IR", "variables": [] }],
+  "constants": [{ "symbol": "g", "value": 10, "unit": "N/kg", "context": "WJEC convention" }],
+  "ao_weights": { "AO1": 0.40, "AO2": 0.40, "AO3": 0.20 }
+}
