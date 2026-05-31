@@ -1,8 +1,2599 @@
 [
   {
-    "id": "q-elec-001", "topic_id": "1-1-1", "higher_only": false, "type": "mcq",
-    "prompt": "Which conductor has the lowest resistivity at room temperature?", "marks": 1,
-    "assessment_objective": "AO1", "difficulty": 1,
-    "options": ["silver", "copper", "iron", "nichrome"], "correct_index": 0
+    "id": "q-elec-001",
+    "topic_id": "1-1-1",
+    "higher_only": false,
+    "prompt": "A 9.0 V battery is connected to a single 18 Ω resistor. Calculate the current.",
+    "marks": 2,
+    "assessment_objective": "AO2",
+    "difficulty": 1,
+    "data_provided": {
+      "V": "9.0 V",
+      "R": "18 Ω"
+    },
+    "type": "numeric",
+    "answer_value": 0.5,
+    "answer_unit": "A",
+    "tolerance_pct": 2,
+    "requires_unit": true,
+    "working_steps": [
+      "Select I = V/R",
+      "I = 9.0 / 18",
+      "I = 0.5 A"
+    ]
+  },
+  {
+    "id": "q-elec-002",
+    "topic_id": "1-1-1",
+    "higher_only": true,
+    "prompt": "Two resistors of 12 Ω and 4 Ω are connected in parallel across a 6.0 V battery. Calculate the total current drawn from the battery.",
+    "marks": 4,
+    "assessment_objective": "AO2",
+    "difficulty": 2,
+    "data_provided": {
+      "R1": "12 Ω",
+      "R2": "4 Ω",
+      "V": "6.0 V"
+    },
+    "type": "numeric",
+    "answer_value": 2,
+    "answer_unit": "A",
+    "tolerance_pct": 2,
+    "requires_unit": true,
+    "working_steps": [
+      "1/R = 1/12 + 1/4 = 1/12 + 3/12 = 4/12",
+      "R = 3 Ω",
+      "I = V/R = 6.0 / 3",
+      "I = 2.0 A"
+    ]
+  },
+  {
+    "id": "q-elec-003",
+    "topic_id": "1-1-1",
+    "higher_only": true,
+    "prompt": "A 12 Ω heating element carries a current of 5.0 A. Use \\(P = I^2 R\\) to calculate the power dissipated.",
+    "marks": 2,
+    "assessment_objective": "AO2",
+    "difficulty": 1,
+    "data_provided": {
+      "I": "5.0 A",
+      "R": "12 Ω"
+    },
+    "type": "numeric",
+    "answer_value": 300,
+    "answer_unit": "W",
+    "tolerance_pct": 2,
+    "requires_unit": true,
+    "working_steps": [
+      "P = I^2 R = (5.0)^2 × 12",
+      "P = 25 × 12",
+      "P = 300 W"
+    ]
+  },
+  {
+    "id": "q-elec-004",
+    "topic_id": "1-1-1",
+    "higher_only": false,
+    "prompt": "Which of the following components has a resistance that DECREASES as light intensity falling on it increases?",
+    "marks": 1,
+    "assessment_objective": "AO1",
+    "difficulty": 1,
+    "type": "mcq",
+    "options": [
+      "Filament lamp",
+      "NTC thermistor",
+      "LDR",
+      "Diode"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "q-elec-005",
+    "topic_id": "1-1-1",
+    "higher_only": false,
+    "prompt": "A student investigates the I-V characteristic of a filament lamp. (a) Sketch the expected I-V curve, labelling the axes. (b) Explain, in terms of the lamp's filament, why the curve is not a straight line through the origin.",
+    "marks": 4,
+    "assessment_objective": "AO1",
+    "difficulty": 2,
+    "type": "structured",
+    "mark_scheme": [
+      {
+        "point": "Curve drawn passing through origin",
+        "marks": 1,
+        "accept": [
+          "S-shape symmetric about origin"
+        ],
+        "reject": [
+          "Straight line through origin"
+        ]
+      },
+      {
+        "point": "Axes labelled I (A) and V (V) correctly (current on y-axis, voltage on x-axis OR vice versa is acceptable)",
+        "marks": 1,
+        "accept": [],
+        "reject": [
+          "Unlabelled axes"
+        ]
+      },
+      {
+        "point": "As current increases the filament heats up",
+        "marks": 1,
+        "accept": [
+          "Filament temperature rises",
+          "Lamp gets hotter"
+        ],
+        "reject": []
+      },
+      {
+        "point": "Higher temperature means higher resistance / atoms vibrate more / electrons collide more with ions",
+        "marks": 1,
+        "accept": [
+          "Resistance increases as it heats"
+        ],
+        "reject": [
+          "Resistance decreases"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q-gen-001",
+    "topic_id": "1-2-1",
+    "higher_only": false,
+    "prompt": "Which of the following is NOT a renewable source of electricity in the UK?",
+    "marks": 1,
+    "assessment_objective": "AO1",
+    "difficulty": 1,
+    "type": "mcq",
+    "options": [
+      "Tidal power",
+      "Natural gas",
+      "Hydroelectric",
+      "Wind"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "q-gen-002",
+    "topic_id": "1-2-1",
+    "higher_only": true,
+    "prompt": "A power station generates 50 MW of electrical power. It is connected to the National Grid via transmission cables of total resistance 0.20 Ω. The power is transmitted at 400 kV. Calculate the power lost as heat in the cables.",
+    "marks": 4,
+    "assessment_objective": "AO2",
+    "difficulty": 3,
+    "data_provided": {
+      "P_generated": "50 MW = 5.0 × 10^7 W",
+      "R_cable": "0.20 Ω",
+      "V_transmit": "400 kV = 4.0 × 10^5 V"
+    },
+    "type": "numeric",
+    "answer_value": 3125,
+    "answer_unit": "W",
+    "tolerance_pct": 5,
+    "requires_unit": true,
+    "working_steps": [
+      "Select I = P/V",
+      "I = 5.0×10^7 / 4.0×10^5 = 125 A",
+      "P_loss = I^2 × R = 125^2 × 0.20",
+      "P_loss = 15625 × 0.20 = 3125 W (≈ 3.1 kW)"
+    ]
+  },
+  {
+    "id": "q-gen-003",
+    "topic_id": "1-2-1",
+    "higher_only": false,
+    "prompt": "Compare and contrast the use of WIND power and NATURAL GAS as sources of electricity for the UK National Grid. Your answer should refer to efficiency, reliability, carbon footprint, and any other relevant factors. [6 QER]",
+    "marks": 6,
+    "assessment_objective": "AO3",
+    "difficulty": 3,
+    "type": "qer6",
+    "mark_scheme": [
+      {
+        "point": "Indicative content: Wind: renewable, no fuel cost, no direct CO2 emissions during operation, low carbon footprint over lifetime. However wind is intermittent (unreliable - depends on weather), low energy density so many turbines needed, visual/noise impact on landscape, capacity factor typically only ~30%. Natural gas: high reliability (can be turned on/off quickly to meet demand), high efficiency (modern combined-cycle gas turbines ~60%), relatively low CO2 per kWh compared to coal but still significant (non-renewable fossil fuel, contributes to climate change), produces NOx pollutants, finite resource subject to price volatility. A balanced answer notes that wind helps decarbonisation but needs backup (often from gas) due to intermittency, so the two are complementary rather than directly competing.",
+        "marks": 1,
+        "accept": [
+          "renewable",
+          "non-renewable",
+          "intermittent",
+          "reliable",
+          "carbon footprint",
+          "CO2",
+          "efficiency",
+          "fossil fuel"
+        ],
+        "reject": []
+      },
+      {
+        "point": "Level 3 (5-6 marks): Sustained comparison addressing efficiency AND reliability AND carbon footprint with a balanced judgement. Coherent, relevant, substantiated, logically structured. Accurate scientific terminology, accurate SPaG.",
+        "marks": 5,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Level 2 (3-4 marks): Some comparison covering at least two of efficiency / reliability / carbon footprint. Partially coherent, largely relevant, some structure. Mainly appropriate terminology, some accurate SPaG.",
+        "marks": 3,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Level 1 (1-2 marks): Basic description of one or two features of wind OR gas, with little comparison. Limited structure, limited terminology, SPaG inaccuracies.",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      }
+    ]
+  },
+  {
+    "id": "q-gen-004",
+    "topic_id": "1-2-1",
+    "higher_only": false,
+    "prompt": "A coal-fired power station supplies 600 MW of useful electrical power for an input of 1500 MW of chemical energy. Calculate its efficiency as a percentage.",
+    "marks": 2,
+    "assessment_objective": "AO2",
+    "difficulty": 1,
+    "data_provided": {
+      "P_useful": "600 MW",
+      "P_in": "1500 MW"
+    },
+    "type": "numeric",
+    "answer_value": 40,
+    "answer_unit": "%",
+    "tolerance_pct": 2,
+    "requires_unit": true,
+    "working_steps": [
+      "% efficiency = (useful / total) × 100",
+      "= (600 / 1500) × 100",
+      "= 40%"
+    ]
+  },
+  {
+    "id": "q-gen-005",
+    "topic_id": "1-2-1",
+    "higher_only": false,
+    "prompt": "Explain why electricity is transmitted across the National Grid at high voltage rather than low voltage.",
+    "marks": 3,
+    "assessment_objective": "AO1",
+    "difficulty": 2,
+    "type": "short",
+    "mark_scheme": [
+      {
+        "point": "Higher voltage means lower current (for the same power transmitted)",
+        "marks": 1,
+        "accept": [
+          "P = VI so for fixed P, large V means small I"
+        ],
+        "reject": [
+          "High voltage is more powerful"
+        ]
+      },
+      {
+        "point": "Energy lost in cables is given by P_loss = I^2 R / depends on (current)^2",
+        "marks": 1,
+        "accept": [
+          "Heat losses depend on I squared"
+        ],
+        "reject": []
+      },
+      {
+        "point": "So lower current means much lower energy lost as heat in the cables (more efficient transmission)",
+        "marks": 1,
+        "accept": [
+          "Less wasted energy"
+        ],
+        "reject": []
+      }
+    ]
+  },
+  {
+    "id": "q-mue-001",
+    "topic_id": "1-3-1",
+    "higher_only": false,
+    "prompt": "A solid copper block has a mass of 540 g and a volume of 60 cm³. Calculate its density in kg/m³.",
+    "marks": 3,
+    "assessment_objective": "AO2",
+    "difficulty": 2,
+    "data_provided": {
+      "m": "540 g = 0.540 kg",
+      "V": "60 cm³ = 60 × 10^-6 m³"
+    },
+    "type": "numeric",
+    "answer_value": 9000,
+    "answer_unit": "kg/m³",
+    "tolerance_pct": 2,
+    "requires_unit": true,
+    "working_steps": [
+      "Convert: m = 0.540 kg, V = 60 × 10^-6 m^3",
+      "ρ = m/V = 0.540 / (60 × 10^-6)",
+      "ρ = 9000 kg/m^3"
+    ]
+  },
+  {
+    "id": "q-mue-002",
+    "topic_id": "1-3-1",
+    "higher_only": true,
+    "prompt": "Explain, in terms of particles, why metals are good conductors of heat.",
+    "marks": 3,
+    "assessment_objective": "AO1",
+    "difficulty": 2,
+    "type": "short",
+    "mark_scheme": [
+      {
+        "point": "Metals contain delocalised / mobile / free electrons",
+        "marks": 1,
+        "accept": [
+          "Sea of electrons"
+        ],
+        "reject": [
+          "Free protons"
+        ]
+      },
+      {
+        "point": "When one end is heated the electrons gain kinetic energy",
+        "marks": 1,
+        "accept": [
+          "Electrons move faster"
+        ],
+        "reject": []
+      },
+      {
+        "point": "These electrons move quickly through the metal lattice and transfer KE to ions/atoms further along (or directly to cooler parts)",
+        "marks": 1,
+        "accept": [
+          "Electrons collide with cooler atoms and pass on energy"
+        ],
+        "reject": [
+          "Atoms move through the metal"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q-mue-003",
+    "topic_id": "1-3-1",
+    "higher_only": false,
+    "prompt": "A house loses 7500 kWh of heat per year. Adding loft insulation reduces this by 28%. The insulation costs £420 to install and electricity costs 18 p/kWh. Calculate the payback time in years.",
+    "marks": 4,
+    "assessment_objective": "AO2",
+    "difficulty": 3,
+    "data_provided": {
+      "annual_loss": "7500 kWh",
+      "reduction": "28%",
+      "install_cost": "£420",
+      "unit_cost": "18 p/kWh"
+    },
+    "type": "numeric",
+    "answer_value": 1.11,
+    "answer_unit": "years",
+    "tolerance_pct": 5,
+    "requires_unit": true,
+    "working_steps": [
+      "Energy saved per year = 0.28 × 7500 = 2100 kWh",
+      "Money saved per year = 2100 × £0.18 = £378",
+      "Payback = 420 / 378 ≈ 1.11 years"
+    ]
+  },
+  {
+    "id": "q-mue-004",
+    "topic_id": "1-3-1",
+    "higher_only": false,
+    "prompt": "Which of the following methods of energy transfer does NOT require any medium (matter) to travel through?",
+    "marks": 1,
+    "assessment_objective": "AO1",
+    "difficulty": 1,
+    "type": "mcq",
+    "options": [
+      "Conduction",
+      "Convection",
+      "Radiation",
+      "All three require a medium"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "q-mue-005",
+    "topic_id": "1-3-1",
+    "higher_only": true,
+    "prompt": "Describe and explain how a convection current is set up in a saucepan of water heated from below.",
+    "marks": 4,
+    "assessment_objective": "AO1",
+    "difficulty": 2,
+    "type": "short",
+    "mark_scheme": [
+      {
+        "point": "Water at the bottom gains energy and becomes hotter",
+        "marks": 1,
+        "accept": [
+          "Water nearest the heat warms first"
+        ],
+        "reject": []
+      },
+      {
+        "point": "Hot water expands so its density decreases",
+        "marks": 1,
+        "accept": [
+          "Particles spread out"
+        ],
+        "reject": [
+          "Particles get bigger"
+        ]
+      },
+      {
+        "point": "Less dense (warmer) water rises; cooler denser water sinks to take its place",
+        "marks": 1,
+        "accept": [],
+        "reject": [
+          "Heat rises"
+        ]
+      },
+      {
+        "point": "This creates a circulating convection current that transfers thermal energy through the water",
+        "marks": 1,
+        "accept": [
+          "Continuous cycle of rising and falling water"
+        ],
+        "reject": []
+      }
+    ]
+  },
+  {
+    "id": "q-dom-001",
+    "topic_id": "1-4-1",
+    "higher_only": false,
+    "prompt": "An electric oven has a power rating of 2.4 kW. It is used for 1.5 hours per day. Electricity costs 17 p/kWh. Calculate the cost of running the oven for 30 days.",
+    "marks": 3,
+    "assessment_objective": "AO2",
+    "difficulty": 2,
+    "data_provided": {
+      "P": "2.4 kW",
+      "t_daily": "1.5 h",
+      "cost": "17 p/kWh",
+      "days": "30"
+    },
+    "type": "numeric",
+    "answer_value": 18.36,
+    "answer_unit": "£",
+    "tolerance_pct": 2,
+    "requires_unit": true,
+    "working_steps": [
+      "Units used per day = 2.4 × 1.5 = 3.6 kWh",
+      "Units used in 30 days = 3.6 × 30 = 108 kWh",
+      "Cost = 108 × £0.17 = £18.36"
+    ]
+  },
+  {
+    "id": "q-dom-002",
+    "topic_id": "1-4-1",
+    "higher_only": false,
+    "prompt": "A toaster is rated at 920 W and runs from a 230 V UK mains supply. The plug contains 3 A, 5 A and 13 A fuses. Calculate the current the toaster draws and state which fuse should be fitted.",
+    "marks": 3,
+    "assessment_objective": "AO2",
+    "difficulty": 2,
+    "data_provided": {
+      "P": "920 W",
+      "V": "230 V"
+    },
+    "type": "numeric",
+    "answer_value": 4,
+    "answer_unit": "A",
+    "tolerance_pct": 2,
+    "requires_unit": true,
+    "working_steps": [
+      "I = P/V = 920 / 230 = 4.0 A",
+      "Fuse must be just above 4.0 A → 5 A fuse"
+    ]
+  },
+  {
+    "id": "q-dom-003",
+    "topic_id": "1-4-1",
+    "higher_only": false,
+    "prompt": "Explain the role of the EARTH wire and the FUSE in protecting a user from electric shock if a fault develops inside a metal-cased appliance.",
+    "marks": 4,
+    "assessment_objective": "AO1",
+    "difficulty": 2,
+    "type": "short",
+    "mark_scheme": [
+      {
+        "point": "If the live wire touches the metal case, the case would become live (dangerous)",
+        "marks": 1,
+        "accept": [
+          "Case at mains voltage"
+        ],
+        "reject": []
+      },
+      {
+        "point": "The earth wire provides a low-resistance path from the case to earth",
+        "marks": 1,
+        "accept": [
+          "Current flows down earth wire to ground"
+        ],
+        "reject": []
+      },
+      {
+        "point": "A very large current flows in the live+earth loop",
+        "marks": 1,
+        "accept": [
+          "Short circuit"
+        ],
+        "reject": []
+      },
+      {
+        "point": "The fuse melts/breaks, disconnecting the live wire and making the appliance safe",
+        "marks": 1,
+        "accept": [
+          "Fuse blows so circuit is broken"
+        ],
+        "reject": [
+          "The fuse heats up so user is safe"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q-dom-004",
+    "topic_id": "1-4-1",
+    "higher_only": false,
+    "prompt": "Which statement BEST describes the difference between an a.c. and a d.c. supply?",
+    "marks": 1,
+    "assessment_objective": "AO1",
+    "difficulty": 1,
+    "type": "mcq",
+    "options": [
+      "a.c. has a higher voltage than d.c.",
+      "a.c. periodically reverses direction; d.c. flows in one direction only",
+      "a.c. only flows in batteries; d.c. only in mains",
+      "a.c. is more dangerous because it transfers more energy"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "q-dom-005",
+    "topic_id": "1-4-1",
+    "higher_only": false,
+    "prompt": "Compare a fuse with a residual current circuit breaker (RCCB) in terms of how they work and the type of fault they protect against.",
+    "marks": 4,
+    "assessment_objective": "AO3",
+    "difficulty": 3,
+    "type": "short",
+    "mark_scheme": [
+      {
+        "point": "Fuse contains a thin wire that melts when current exceeds the rating",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Fuse protects against overcurrent / overload (large current faults)",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "RCCB compares the currents in the live and neutral wires and trips if they differ",
+        "marks": 1,
+        "accept": [
+          "Detects imbalance / current leaking to earth"
+        ],
+        "reject": []
+      },
+      {
+        "point": "RCCB trips very quickly so it protects against electric shock to a person; works at smaller currents than a fuse",
+        "marks": 1,
+        "accept": [
+          "Trips within milliseconds; protects users"
+        ],
+        "reject": []
+      }
+    ]
+  },
+  {
+    "id": "q-wav-001",
+    "topic_id": "1-5-1",
+    "higher_only": false,
+    "prompt": "An ultrasound wave has frequency 2.5 MHz and travels at 1500 m/s through human tissue. Calculate its wavelength in mm.",
+    "marks": 3,
+    "assessment_objective": "AO2",
+    "difficulty": 2,
+    "data_provided": {
+      "f": "2.5 MHz = 2.5 × 10^6 Hz",
+      "v": "1500 m/s"
+    },
+    "type": "numeric",
+    "answer_value": 0.6,
+    "answer_unit": "mm",
+    "tolerance_pct": 2,
+    "requires_unit": true,
+    "working_steps": [
+      "v = λf so λ = v/f = 1500 / (2.5 × 10^6)",
+      "λ = 6.0 × 10^-4 m",
+      "λ = 0.6 mm"
+    ]
+  },
+  {
+    "id": "q-wav-002",
+    "topic_id": "1-5-1",
+    "higher_only": false,
+    "prompt": "Which of the following lists the electromagnetic spectrum in order of INCREASING frequency?",
+    "marks": 1,
+    "assessment_objective": "AO1",
+    "difficulty": 1,
+    "type": "mcq",
+    "options": [
+      "Radio, microwave, IR, visible, UV, X-ray, gamma",
+      "Gamma, X-ray, UV, visible, IR, microwave, radio",
+      "Visible, IR, UV, X-ray, gamma, microwave, radio",
+      "Radio, IR, microwave, visible, X-ray, UV, gamma"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "q-wav-003",
+    "topic_id": "1-5-1",
+    "higher_only": false,
+    "prompt": "(a) State the difference between a transverse and a longitudinal wave. (b) Give one example of each type of wave.",
+    "marks": 4,
+    "assessment_objective": "AO1",
+    "difficulty": 1,
+    "type": "structured",
+    "mark_scheme": [
+      {
+        "point": "Transverse: oscillations are perpendicular to direction of energy transfer / wave travel",
+        "marks": 1,
+        "accept": [
+          "At right angles to direction of travel"
+        ],
+        "reject": []
+      },
+      {
+        "point": "Longitudinal: oscillations are parallel to direction of energy transfer / wave travel",
+        "marks": 1,
+        "accept": [
+          "In the same direction as wave travel"
+        ],
+        "reject": []
+      },
+      {
+        "point": "Example of transverse: any of water/EM/light/S-waves/wave on a rope",
+        "marks": 1,
+        "accept": [],
+        "reject": [
+          "Sound"
+        ]
+      },
+      {
+        "point": "Example of longitudinal: sound OR P-waves (seismic)",
+        "marks": 1,
+        "accept": [],
+        "reject": [
+          "Light",
+          "Radio"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q-wav-004",
+    "topic_id": "1-5-1",
+    "higher_only": false,
+    "prompt": "Describe the electromagnetic spectrum. Your answer should include the properties that ALL electromagnetic waves share, the order of the seven regions, and at least TWO ways in which the regions differ from each other. [6 QER]",
+    "marks": 6,
+    "assessment_objective": "AO1",
+    "difficulty": 2,
+    "type": "qer6",
+    "mark_scheme": [
+      {
+        "point": "Indicative content: All EM waves are transverse, travel at the same speed (3 × 10^8 m/s) in a vacuum, transfer energy, can travel through a vacuum (do not need a medium). They are arranged: radio (longest λ, lowest f, lowest energy) → microwaves → infrared → visible light → ultraviolet → X-rays → gamma rays (shortest λ, highest f, highest energy). Differences: wavelength decreases left to right; frequency and energy increase left to right; ionising effect increases (UV, X-ray and gamma are ionising; the others are not); danger to humans increases from radio to gamma; uses differ (radio for broadcasting, microwaves for cooking/communications, IR for heating/remote controls, visible for sight, UV for tanning/sterilisation, X-rays for imaging, gamma for cancer treatment).",
+        "marks": 1,
+        "accept": [
+          "transverse",
+          "3 × 10^8 m/s",
+          "vacuum",
+          "wavelength",
+          "frequency",
+          "ionising",
+          "radio",
+          "microwave",
+          "infrared",
+          "visible",
+          "ultraviolet",
+          "X-ray",
+          "gamma"
+        ],
+        "reject": []
+      },
+      {
+        "point": "Level 3 (5-6 marks): Detailed description of shared properties AND correct order of regions AND at least two differences with examples. Sustained reasoning, coherent, accurate terminology, accurate SPaG.",
+        "marks": 5,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Level 2 (3-4 marks): Some shared properties + most of the order + one difference. Partially coherent, mainly appropriate terminology, some SPaG accuracy.",
+        "marks": 3,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Level 1 (1-2 marks): Basic description of one property or partial order. Limited reasoning and terminology, SPaG inaccuracies.",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      }
+    ]
+  },
+  {
+    "id": "q-wav-005",
+    "topic_id": "1-5-1",
+    "higher_only": false,
+    "prompt": "A geostationary communications satellite orbits at an altitude of 36 000 km above the equator. A microwave signal travels from a ground station up to the satellite and back down to another ground station, with both ground-to-satellite paths each effectively 36 000 km. Calculate the total signal delay. Use c = 3 × 10^8 m/s.",
+    "marks": 3,
+    "assessment_objective": "AO2",
+    "difficulty": 2,
+    "data_provided": {
+      "path_length_one_way": "36 000 km × 2 = 7.2 × 10^7 m total",
+      "c": "3 × 10^8 m/s"
+    },
+    "type": "numeric",
+    "answer_value": 0.24,
+    "answer_unit": "s",
+    "tolerance_pct": 5,
+    "requires_unit": true,
+    "working_steps": [
+      "Total distance = 2 × 36 000 × 10^3 = 7.2 × 10^7 m",
+      "t = d / c = 7.2 × 10^7 / (3 × 10^8)",
+      "t = 0.24 s (i.e. 240 ms)"
+    ]
+  },
+  {
+    "id": "q-tir-001",
+    "topic_id": "1-6-1",
+    "higher_only": false,
+    "prompt": "State the TWO conditions that must be met for total internal reflection to occur.",
+    "marks": 2,
+    "assessment_objective": "AO1",
+    "difficulty": 1,
+    "type": "short",
+    "mark_scheme": [
+      {
+        "point": "Light must be travelling from a denser/optically denser medium into a less dense one",
+        "marks": 1,
+        "accept": [
+          "From higher refractive index to lower"
+        ],
+        "reject": []
+      },
+      {
+        "point": "The angle of incidence must be greater than the critical angle (of the boundary)",
+        "marks": 1,
+        "accept": [
+          "Angle ≥ critical angle"
+        ],
+        "reject": [
+          "Angle of incidence equals 90°"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q-tir-002",
+    "topic_id": "1-6-1",
+    "higher_only": true,
+    "prompt": "An optical fibre cable runs between London and New York, a distance of 5500 km. Light in the fibre travels at 2.0 × 10^8 m/s. (a) Calculate the time taken for a signal to travel from London to New York. (b) State and explain ONE advantage of using optical fibres over geostationary satellites for international communication.",
+    "marks": 5,
+    "assessment_objective": "AO2",
+    "difficulty": 2,
+    "type": "structured",
+    "mark_scheme": [
+      {
+        "point": "Selection of t = d/v",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Substitution: t = 5.5 × 10^6 / (2.0 × 10^8)",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Answer: 0.0275 s (or 27.5 ms)",
+        "marks": 1,
+        "accept": [
+          "2.75 × 10^-2 s",
+          "27 ms to 28 ms"
+        ],
+        "reject": []
+      },
+      {
+        "point": "Advantage stated: shorter delay / more secure / higher data rate / less interference",
+        "marks": 1,
+        "accept": [],
+        "reject": [
+          "Cheaper (cost is excluded by spec wording)"
+        ]
+      },
+      {
+        "point": "Explanation linked to the advantage e.g. 'shorter delay because the path is much shorter than to a geostationary satellite (~72 000 km round trip)' OR 'fibre signal is enclosed so less prone to interception/eavesdropping'",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      }
+    ]
+  },
+  {
+    "id": "q-tir-003",
+    "topic_id": "1-6-1",
+    "higher_only": true,
+    "prompt": "Compare endoscopy and CT scanning as methods of looking inside a patient's body. Refer to the type of radiation used and the associated risk.",
+    "marks": 4,
+    "assessment_objective": "AO3",
+    "difficulty": 2,
+    "type": "short",
+    "mark_scheme": [
+      {
+        "point": "Endoscopy uses visible light (sent and returned along optical fibres)",
+        "marks": 1,
+        "accept": [
+          "Visible/IR light"
+        ],
+        "reject": [
+          "X-rays"
+        ]
+      },
+      {
+        "point": "Visible light is non-ionising so endoscopy carries no radiation risk to cells",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "CT scan uses X-rays",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "X-rays are ionising so CT scanning carries a small risk of cell damage / cancer",
+        "marks": 1,
+        "accept": [
+          "Can damage DNA / cause mutations"
+        ],
+        "reject": []
+      }
+    ]
+  },
+  {
+    "id": "q-tir-004",
+    "topic_id": "1-6-1",
+    "higher_only": false,
+    "prompt": "A ray of light is shone into a glass block. As the angle of incidence inside the block (at the glass-air boundary) is slowly increased from 0°, what happens FIRST?",
+    "marks": 1,
+    "assessment_objective": "AO1",
+    "difficulty": 2,
+    "type": "mcq",
+    "options": [
+      "The light is totally internally reflected back into the glass",
+      "The refracted ray bends away from the normal and the reflected ray gets brighter",
+      "The light becomes polarised",
+      "The light changes colour"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "q-seis-001",
+    "topic_id": "1-7-1",
+    "higher_only": false,
+    "prompt": "State the differences between seismic P-waves and S-waves, in terms of (a) the type of wave each is, and (b) the materials through which each can travel.",
+    "marks": 4,
+    "assessment_objective": "AO1",
+    "difficulty": 1,
+    "type": "short",
+    "mark_scheme": [
+      {
+        "point": "P-waves are longitudinal",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "S-waves are transverse",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "P-waves travel through both solids and liquids",
+        "marks": 1,
+        "accept": [
+          "Through any material / through the core"
+        ],
+        "reject": []
+      },
+      {
+        "point": "S-waves travel through solids only / cannot pass through liquids",
+        "marks": 1,
+        "accept": [
+          "Cannot pass through the (liquid outer) core"
+        ],
+        "reject": []
+      }
+    ]
+  },
+  {
+    "id": "q-seis-002",
+    "topic_id": "1-7-1",
+    "higher_only": false,
+    "prompt": "At a seismic station, a P-wave (speed 6.0 km/s) arrives 60 s before the S-wave (speed 4.0 km/s) from the same earthquake. Calculate the distance from the station to the epicentre.",
+    "marks": 4,
+    "assessment_objective": "AO2",
+    "difficulty": 3,
+    "data_provided": {
+      "v_P": "6.0 km/s",
+      "v_S": "4.0 km/s",
+      "Δt": "60 s"
+    },
+    "type": "numeric",
+    "answer_value": 720,
+    "answer_unit": "km",
+    "tolerance_pct": 5,
+    "requires_unit": true,
+    "working_steps": [
+      "Let d be the distance. d/v_S − d/v_P = Δt",
+      "d/4 − d/6 = 60",
+      "(3d − 2d) / 12 = 60 → d/12 = 60",
+      "d = 720 km"
+    ]
+  },
+  {
+    "id": "q-seis-003",
+    "topic_id": "1-7-1",
+    "higher_only": false,
+    "prompt": "Seismic records show a region on the opposite side of the Earth from an earthquake's epicentre where NO S-waves are detected. Explain what this 'S-wave shadow zone' tells geologists about the structure of the Earth.",
+    "marks": 3,
+    "assessment_objective": "AO3",
+    "difficulty": 2,
+    "type": "short",
+    "mark_scheme": [
+      {
+        "point": "S-waves are transverse and cannot travel through liquids",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Some part of the Earth's interior must therefore be liquid (or behave like a liquid for S-waves)",
+        "marks": 1,
+        "accept": [
+          "The outer core is liquid"
+        ],
+        "reject": []
+      },
+      {
+        "point": "This part is the outer core (located between mantle and inner core), so the model of the Earth has a solid mantle and a liquid outer core (inner core solid)",
+        "marks": 1,
+        "accept": [
+          "Layered model with liquid outer core"
+        ],
+        "reject": []
+      }
+    ]
+  },
+  {
+    "id": "q-seis-004",
+    "topic_id": "1-7-1",
+    "higher_only": false,
+    "prompt": "Why are seismic records from THREE or more seismic stations needed to locate the epicentre of an earthquake?",
+    "marks": 1,
+    "assessment_objective": "AO2",
+    "difficulty": 2,
+    "type": "mcq",
+    "options": [
+      "To average out random measurement errors",
+      "Each station gives a distance to the epicentre; the three circles intersect at one point (triangulation)",
+      "Each station measures a different wave type",
+      "To check that the earthquake actually happened"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "q-kin-001",
+    "topic_id": "1-8-1",
+    "higher_only": true,
+    "prompt": "A fixed mass of gas has a pressure of 120 kPa at 27 °C. The gas is heated, at constant volume, to 327 °C. Calculate the new pressure.",
+    "marks": 4,
+    "assessment_objective": "AO2",
+    "difficulty": 2,
+    "data_provided": {
+      "p1": "120 kPa",
+      "T1": "27 °C",
+      "T2": "327 °C"
+    },
+    "type": "numeric",
+    "answer_value": 240,
+    "answer_unit": "kPa",
+    "tolerance_pct": 2,
+    "requires_unit": true,
+    "working_steps": [
+      "Convert temperatures to kelvin: T1 = 27 + 273 = 300 K; T2 = 327 + 273 = 600 K",
+      "At constant V: p1/T1 = p2/T2",
+      "p2 = p1 × T2/T1 = 120 × 600/300",
+      "p2 = 240 kPa"
+    ]
+  },
+  {
+    "id": "q-kin-002",
+    "topic_id": "1-8-1",
+    "higher_only": false,
+    "prompt": "Calculate the energy needed to raise the temperature of 0.50 kg of water from 20 °C to 100 °C. The specific heat capacity of water is 4200 J/(kg·°C).",
+    "marks": 3,
+    "assessment_objective": "AO2",
+    "difficulty": 1,
+    "data_provided": {
+      "m": "0.50 kg",
+      "Δθ": "100 − 20 = 80 °C",
+      "c": "4200 J/(kg·°C)"
+    },
+    "type": "numeric",
+    "answer_value": 168000,
+    "answer_unit": "J",
+    "tolerance_pct": 2,
+    "requires_unit": true,
+    "working_steps": [
+      "ΔQ = mcΔθ",
+      "ΔQ = 0.50 × 4200 × 80",
+      "ΔQ = 168 000 J (168 kJ)"
+    ]
+  },
+  {
+    "id": "q-kin-003",
+    "topic_id": "1-8-1",
+    "higher_only": false,
+    "prompt": "Calculate the energy needed to completely melt 0.25 kg of ice at 0 °C into water at 0 °C. The specific latent heat of fusion of ice is 3.34 × 10^5 J/kg.",
+    "marks": 2,
+    "assessment_objective": "AO2",
+    "difficulty": 1,
+    "data_provided": {
+      "m": "0.25 kg",
+      "L": "3.34 × 10^5 J/kg"
+    },
+    "type": "numeric",
+    "answer_value": 83500,
+    "answer_unit": "J",
+    "tolerance_pct": 2,
+    "requires_unit": true,
+    "working_steps": [
+      "Q = mL",
+      "Q = 0.25 × 3.34 × 10^5",
+      "Q = 83 500 J (≈ 84 kJ)"
+    ]
+  },
+  {
+    "id": "q-kin-004",
+    "topic_id": "1-8-1",
+    "higher_only": true,
+    "prompt": "Using ideas about the motion of gas particles, explain (i) why the pressure of a fixed mass of gas in a sealed container INCREASES when the temperature is raised at constant volume, and (ii) why the pressure DECREASES when the volume of the container is increased at constant temperature. [6 QER]",
+    "marks": 6,
+    "assessment_objective": "AO1",
+    "difficulty": 3,
+    "type": "qer6",
+    "mark_scheme": [
+      {
+        "point": "Indicative content: A gas consists of fast-moving particles that collide with the walls of their container. Each collision exerts a small force on the wall; pressure is the total force per unit area. (i) When the temperature rises, particles gain kinetic energy and move faster on average. They collide with the walls MORE FREQUENTLY (more collisions per second), and each collision delivers a larger change of momentum, so the average force on the wall increases. Volume is fixed, so the same wall area receives a greater force → pressure rises. (ii) When the volume increases at constant temperature, particles keep the same average kinetic energy (same speed). However, in a larger volume the particles travel further between collisions with the walls, so the number of collisions per second on a given area falls. The force per unit area therefore decreases → pressure falls. Quantitatively this is summarised by pV/T = constant (T in kelvin).",
+        "marks": 1,
+        "accept": [
+          "kinetic energy",
+          "collisions",
+          "wall",
+          "force",
+          "area",
+          "frequency of collisions",
+          "momentum"
+        ],
+        "reject": []
+      },
+      {
+        "point": "Level 3 (5-6 marks): Both parts addressed with explicit references to (a) rate of collisions and (b) force per collision (where relevant) and (c) area. Sustained reasoning, accurate terminology and SPaG.",
+        "marks": 5,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Level 2 (3-4 marks): Both parts addressed at a qualitative level, OR one part addressed in full detail. Some structure and terminology.",
+        "marks": 3,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Level 1 (1-2 marks): Basic statement that particles collide with walls and that temperature/volume changes affect pressure, with little mechanism.",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      }
+    ]
+  },
+  {
+    "id": "q-kin-005",
+    "topic_id": "1-8-1",
+    "higher_only": true,
+    "prompt": "A weather balloon contains 2.00 m³ of helium at sea level where the pressure is 100 kPa and the temperature is 17 °C. The balloon rises to an altitude where the pressure is 25 kPa and the temperature is −33 °C. Calculate the new volume of the helium.",
+    "marks": 5,
+    "assessment_objective": "AO2",
+    "difficulty": 3,
+    "type": "structured",
+    "mark_scheme": [
+      {
+        "point": "Select pV/T = constant (or p1V1/T1 = p2V2/T2)",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Convert both temperatures to kelvin: T1 = 17 + 273 = 290 K; T2 = −33 + 273 = 240 K",
+        "marks": 1,
+        "accept": [],
+        "reject": [
+          "Leaving in °C"
+        ]
+      },
+      {
+        "point": "Substitute: (100 × 2.00) / 290 = (25 × V2) / 240",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Rearrange: V2 = (100 × 2.00 × 240) / (290 × 25)",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "V2 = 6.62 m³ (accept 6.6 m³)",
+        "marks": 1,
+        "accept": [
+          "6.6 m³",
+          "6.62 m³"
+        ],
+        "reject": []
+      }
+    ]
+  },
+  {
+    "id": "q-em-001",
+    "topic_id": "1-9-1",
+    "higher_only": true,
+    "prompt": "A copper wire of length 0.25 m carries a current of 4.0 A perpendicular to a magnetic field of strength 0.60 T. Calculate the force on the wire.",
+    "marks": 2,
+    "assessment_objective": "AO2",
+    "difficulty": 1,
+    "data_provided": {
+      "B": "0.60 T",
+      "I": "4.0 A",
+      "l": "0.25 m"
+    },
+    "type": "numeric",
+    "answer_value": 0.6,
+    "answer_unit": "N",
+    "tolerance_pct": 2,
+    "requires_unit": true,
+    "working_steps": [
+      "F = BIl = 0.60 × 4.0 × 0.25",
+      "F = 0.60 N"
+    ]
+  },
+  {
+    "id": "q-em-002",
+    "topic_id": "1-9-1",
+    "higher_only": true,
+    "prompt": "A step-down transformer is needed to reduce 230 V mains to 12 V for a doorbell. The primary coil has 1150 turns. Assuming the transformer is 100% efficient, calculate the number of turns required on the secondary coil.",
+    "marks": 3,
+    "assessment_objective": "AO2",
+    "difficulty": 2,
+    "data_provided": {
+      "V1": "230 V",
+      "V2": "12 V",
+      "N1": "1150"
+    },
+    "type": "numeric",
+    "answer_value": 60,
+    "answer_unit": "turns",
+    "tolerance_pct": 2,
+    "requires_unit": true,
+    "working_steps": [
+      "V1/V2 = N1/N2 → N2 = N1 × V2/V1",
+      "N2 = 1150 × (12 / 230)",
+      "N2 = 60 turns"
+    ]
+  },
+  {
+    "id": "q-em-003",
+    "topic_id": "1-9-1",
+    "higher_only": false,
+    "prompt": "A student investigates a simple d.c. motor. (a) State THREE changes the student could make to increase the rotation speed of the motor. (b) Explain how a split-ring commutator keeps the coil rotating in the same direction.",
+    "marks": 5,
+    "assessment_objective": "AO1",
+    "difficulty": 2,
+    "type": "structured",
+    "mark_scheme": [
+      {
+        "point": "Any THREE of: increase current; use stronger magnets / increase magnetic field strength; increase number of turns on coil; insert a soft-iron core",
+        "marks": 3,
+        "accept": [
+          "Larger coil area"
+        ],
+        "reject": [
+          "Increase voltage if 'current' or 'B' already given"
+        ]
+      },
+      {
+        "point": "Every half-turn the current direction in the coil is reversed",
+        "marks": 1,
+        "accept": [
+          "Commutator swaps contacts every half-cycle"
+        ],
+        "reject": []
+      },
+      {
+        "point": "So the force on each side of the coil keeps pointing the same way, maintaining the rotation direction (rather than oscillating)",
+        "marks": 1,
+        "accept": [
+          "Couple acts in the same rotational sense throughout"
+        ],
+        "reject": []
+      }
+    ]
+  },
+  {
+    "id": "q-em-004",
+    "topic_id": "1-9-1",
+    "higher_only": false,
+    "prompt": "Fleming's left hand rule is used to find the direction of the force on a current-carrying wire in a magnetic field. Which finger represents the magnetic field?",
+    "marks": 1,
+    "assessment_objective": "AO1",
+    "difficulty": 1,
+    "type": "mcq",
+    "options": [
+      "Thumb",
+      "First finger",
+      "Second finger",
+      "Little finger"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "q-em-005",
+    "topic_id": "1-9-1",
+    "higher_only": true,
+    "prompt": "Explain why a transformer will only work with an alternating current (a.c.) supply and not with direct current (d.c.).",
+    "marks": 3,
+    "assessment_objective": "AO3",
+    "difficulty": 3,
+    "type": "short",
+    "mark_scheme": [
+      {
+        "point": "A transformer relies on electromagnetic induction in the secondary coil",
+        "marks": 1,
+        "accept": [
+          "EMF induced by changing flux"
+        ],
+        "reject": []
+      },
+      {
+        "point": "Induction only occurs when the magnetic flux through the secondary is CHANGING",
+        "marks": 1,
+        "accept": [
+          "A changing magnetic field is required"
+        ],
+        "reject": [
+          "A magnetic field is required"
+        ]
+      },
+      {
+        "point": "An a.c. current in the primary produces a continually changing flux; a steady d.c. produces a steady (non-changing) flux, so no EMF is induced in the secondary",
+        "marks": 1,
+        "accept": [
+          "With d.c. the flux is constant so no induced voltage"
+        ],
+        "reject": []
+      }
+    ]
+  },
+  {
+    "id": "q-kine-001",
+    "topic_id": "2-1-1",
+    "higher_only": false,
+    "prompt": "A car accelerates uniformly from 8.0 m/s to 26 m/s in 6.0 s. Calculate its acceleration.",
+    "marks": 2,
+    "assessment_objective": "AO2",
+    "difficulty": 1,
+    "data_provided": {
+      "u": "8.0 m/s",
+      "v": "26 m/s",
+      "t": "6.0 s"
+    },
+    "type": "numeric",
+    "answer_value": 3,
+    "answer_unit": "m/s²",
+    "tolerance_pct": 2,
+    "requires_unit": true,
+    "working_steps": [
+      "a = Δv / t = (26 − 8.0) / 6.0",
+      "a = 18 / 6.0",
+      "a = 3.0 m/s²"
+    ]
+  },
+  {
+    "id": "q-kine-002",
+    "topic_id": "2-1-1",
+    "higher_only": true,
+    "prompt": "A car is travelling at 20 m/s. The driver sees an obstacle and reacts in 0.8 s before applying the brakes. The brakes then produce a constant deceleration of 5.0 m/s². (a) Calculate the thinking distance. (b) Calculate the braking distance. (c) State the total stopping distance. (d) State ONE factor (other than speed) that would INCREASE the thinking distance.",
+    "marks": 6,
+    "assessment_objective": "AO2",
+    "difficulty": 2,
+    "type": "structured",
+    "mark_scheme": [
+      {
+        "point": "Thinking distance = 20 × 0.8 = 16 m",
+        "marks": 2,
+        "accept": [
+          "16 m"
+        ],
+        "reject": []
+      },
+      {
+        "point": "Braking: use v^2 = u^2 + 2ax with v = 0, u = 20, a = −5.0 → 0 = 400 − 10x → x = 40 m",
+        "marks": 2,
+        "accept": [
+          "40 m"
+        ],
+        "reject": []
+      },
+      {
+        "point": "Total stopping distance = 16 + 40 = 56 m",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Any ONE valid factor: alcohol / drugs / tiredness / distraction (e.g. mobile phone) / illness",
+        "marks": 1,
+        "accept": [],
+        "reject": [
+          "Poor brakes (that's braking distance)",
+          "Wet road (braking)",
+          "Slippery road (braking)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q-kine-003",
+    "topic_id": "2-1-1",
+    "higher_only": false,
+    "prompt": "On a velocity-time graph for an object, the gradient of the line represents which quantity?",
+    "marks": 1,
+    "assessment_objective": "AO1",
+    "difficulty": 1,
+    "type": "mcq",
+    "options": [
+      "Distance travelled",
+      "Acceleration",
+      "Speed",
+      "Force"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "q-kine-004",
+    "topic_id": "2-1-1",
+    "higher_only": true,
+    "prompt": "On a velocity-time graph, an object's velocity rises linearly from 0 to 30 m/s over 10 s, then stays constant at 30 m/s for 20 s, then falls linearly to 0 over 5 s. Calculate the total distance travelled.",
+    "marks": 4,
+    "assessment_objective": "AO2",
+    "difficulty": 2,
+    "data_provided": {
+      "phase_1": "0 to 30 m/s over 10 s (triangle)",
+      "phase_2": "30 m/s for 20 s (rectangle)",
+      "phase_3": "30 to 0 m/s over 5 s (triangle)"
+    },
+    "type": "numeric",
+    "answer_value": 825,
+    "answer_unit": "m",
+    "tolerance_pct": 2,
+    "requires_unit": true,
+    "working_steps": [
+      "Area = distance under v-t graph",
+      "Triangle 1 = ½ × 10 × 30 = 150 m",
+      "Rectangle = 20 × 30 = 600 m",
+      "Triangle 2 = ½ × 5 × 30 = 75 m",
+      "Total = 150 + 600 + 75 = 825 m"
+    ]
+  },
+  {
+    "id": "q-kine-005",
+    "topic_id": "2-1-1",
+    "higher_only": false,
+    "prompt": "State TWO factors that affect the BRAKING distance of a car and explain how each affects the braking distance.",
+    "marks": 4,
+    "assessment_objective": "AO3",
+    "difficulty": 2,
+    "type": "short",
+    "mark_scheme": [
+      {
+        "point": "Factor 1 (any of): worn tyres / wet or icy road surface / worn brakes / increased vehicle mass / steep downhill",
+        "marks": 1,
+        "accept": [],
+        "reject": [
+          "Driver tiredness",
+          "Alcohol"
+        ]
+      },
+      {
+        "point": "Linked explanation of factor 1: e.g. less friction with road so longer to stop OR more KE to dissipate at the same braking force",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Factor 2 (a DIFFERENT one of the above)",
+        "marks": 1,
+        "accept": [],
+        "reject": [
+          "Same factor twice"
+        ]
+      },
+      {
+        "point": "Linked explanation of factor 2",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      }
+    ]
+  },
+  {
+    "id": "q-newt-001",
+    "topic_id": "2-2-1",
+    "higher_only": false,
+    "prompt": "A resultant force of 1200 N acts on a car of mass 800 kg. Calculate the acceleration of the car.",
+    "marks": 2,
+    "assessment_objective": "AO2",
+    "difficulty": 1,
+    "data_provided": {
+      "F": "1200 N",
+      "m": "800 kg"
+    },
+    "type": "numeric",
+    "answer_value": 1.5,
+    "answer_unit": "m/s²",
+    "tolerance_pct": 2,
+    "requires_unit": true,
+    "working_steps": [
+      "a = F/m = 1200 / 800",
+      "a = 1.5 m/s²"
+    ]
+  },
+  {
+    "id": "q-newt-002",
+    "topic_id": "2-2-1",
+    "higher_only": false,
+    "prompt": "A skydiver of mass 75 kg jumps from a stationary helicopter at high altitude and falls without opening her parachute. Describe and explain how the forces acting on her — and her motion — change from the moment she jumps until she reaches terminal velocity. [6 QER] (Use g = 10 N/kg.)",
+    "marks": 6,
+    "assessment_objective": "AO2",
+    "difficulty": 3,
+    "type": "qer6",
+    "mark_scheme": [
+      {
+        "point": "Indicative content: Immediately after jumping, the skydiver is essentially at rest (vertical velocity zero), so air resistance is zero. The only significant force is her weight W = mg = 75 × 10 = 750 N downwards, giving a resultant force of 750 N downwards. By Newton's 2nd law, a = F/m = 10 m/s² downward — she accelerates downward at g. As she speeds up, air resistance increases (it depends on speed and on cross-sectional area). The RESULTANT force is now W − air resistance, which is less than W. Therefore she still accelerates (still goes faster) but at a DECREASING rate. Air resistance continues to grow until it exactly equals her weight (750 N). The resultant force is then zero, so by Newton's 1st law she moves at constant velocity — her TERMINAL VELOCITY. From that moment her motion is uniform.",
+        "marks": 1,
+        "accept": [
+          "weight",
+          "air resistance",
+          "resultant force",
+          "acceleration",
+          "terminal velocity",
+          "Newton's first law",
+          "Newton's second law"
+        ],
+        "reject": []
+      },
+      {
+        "point": "Level 3 (5-6 marks): Clear account of (i) initial state with weight only and acceleration = g, (ii) increasing air resistance reducing resultant, (iii) decreasing acceleration, (iv) terminal velocity with balanced forces and zero acceleration. Coherent reasoning, accurate terminology and SPaG.",
+        "marks": 5,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Level 2 (3-4 marks): Identifies weight and air resistance and reaches terminal velocity, but with gaps (e.g. constant acceleration assumed throughout, or no quantitative weight).",
+        "marks": 3,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Level 1 (1-2 marks): Mentions falling and air resistance with little detail. Limited terminology.",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      }
+    ]
+  },
+  {
+    "id": "q-newt-003",
+    "topic_id": "2-2-1",
+    "higher_only": false,
+    "prompt": "State Newton's THIRD law of motion, and give one everyday example.",
+    "marks": 3,
+    "assessment_objective": "AO1",
+    "difficulty": 1,
+    "type": "short",
+    "mark_scheme": [
+      {
+        "point": "If body A exerts a force on body B, then B exerts a force on A that is equal in size and opposite in direction",
+        "marks": 2,
+        "accept": [
+          "For every action there is an equal and opposite reaction (action–reaction pairs on different bodies)"
+        ],
+        "reject": [
+          "Forces cancel out"
+        ]
+      },
+      {
+        "point": "Any valid example: rocket exhaust pushes back on gases / gases push rocket forward; a swimmer pushes water back / water pushes swimmer forward; person stands on floor / floor pushes person up; gun recoils when bullet is fired",
+        "marks": 1,
+        "accept": [],
+        "reject": [
+          "A balanced see-saw"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q-newt-004",
+    "topic_id": "2-2-1",
+    "higher_only": false,
+    "prompt": "An astronaut has a mass of 70 kg. What is the astronaut's WEIGHT on the surface of the Moon, where the gravitational field strength is 1.6 N/kg?",
+    "marks": 1,
+    "assessment_objective": "AO2",
+    "difficulty": 1,
+    "type": "mcq",
+    "options": [
+      "70 N",
+      "112 N",
+      "700 N",
+      "44 N"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "q-newt-005",
+    "topic_id": "2-2-1",
+    "higher_only": false,
+    "prompt": "A 1200 kg car is travelling at a constant velocity along a straight, level road. (a) State the resultant force on the car and justify your answer. (b) The driver pushes the accelerator pedal. The forward driving force from the engine is now 3000 N and the total resistive forces (air resistance + friction) are 1800 N. Calculate the acceleration of the car.",
+    "marks": 4,
+    "assessment_objective": "AO2",
+    "difficulty": 2,
+    "type": "structured",
+    "mark_scheme": [
+      {
+        "point": "Resultant force = 0 N",
+        "marks": 1,
+        "accept": [
+          "Zero newtons"
+        ],
+        "reject": []
+      },
+      {
+        "point": "Because Newton's 1st law: at constant velocity the forces must be balanced (driving force = resistive forces)",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Net force = 3000 − 1800 = 1200 N",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "a = F/m = 1200/1200 = 1.0 m/s²",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      }
+    ]
+  },
+  {
+    "id": "q-work-001",
+    "topic_id": "2-3-1",
+    "higher_only": true,
+    "prompt": "A box of mass 25 kg is lifted vertically through 1.8 m. Calculate the gain in gravitational potential energy. (g = 10 N/kg)",
+    "marks": 2,
+    "assessment_objective": "AO2",
+    "difficulty": 1,
+    "data_provided": {
+      "m": "25 kg",
+      "h": "1.8 m",
+      "g": "10 N/kg"
+    },
+    "type": "numeric",
+    "answer_value": 450,
+    "answer_unit": "J",
+    "tolerance_pct": 2,
+    "requires_unit": true,
+    "working_steps": [
+      "PE = mgh = 25 × 10 × 1.8",
+      "PE = 450 J"
+    ]
+  },
+  {
+    "id": "q-work-002",
+    "topic_id": "2-3-1",
+    "higher_only": true,
+    "prompt": "A car of mass 1100 kg is travelling at 18 m/s. Calculate its kinetic energy.",
+    "marks": 2,
+    "assessment_objective": "AO2",
+    "difficulty": 1,
+    "data_provided": {
+      "m": "1100 kg",
+      "v": "18 m/s"
+    },
+    "type": "numeric",
+    "answer_value": 178200,
+    "answer_unit": "J",
+    "tolerance_pct": 2,
+    "requires_unit": true,
+    "working_steps": [
+      "KE = ½ m v² = 0.5 × 1100 × 18²",
+      "= 0.5 × 1100 × 324",
+      "= 178 200 J (about 1.78 × 10^5 J)"
+    ]
+  },
+  {
+    "id": "q-work-003",
+    "topic_id": "2-3-1",
+    "higher_only": true,
+    "prompt": "A spring obeys Hooke's law. When a force of 8.0 N is applied to the spring, its extension is 0.040 m. (a) Calculate the spring constant. (b) Calculate the elastic potential energy stored when the spring is extended by 0.040 m. (c) The spring is now extended to 0.060 m. Calculate the NEW energy stored.",
+    "marks": 6,
+    "assessment_objective": "AO2",
+    "difficulty": 2,
+    "type": "structured",
+    "mark_scheme": [
+      {
+        "point": "k = F/x = 8.0 / 0.040",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "k = 200 N/m",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "W = ½ F x = ½ × 8.0 × 0.040",
+        "marks": 1,
+        "accept": [
+          "W = ½ k x² = ½ × 200 × 0.040²"
+        ],
+        "reject": []
+      },
+      {
+        "point": "W = 0.16 J",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "New W = ½ × 200 × 0.060² = ½ × 200 × 0.0036",
+        "marks": 1,
+        "accept": [
+          "New F = kx = 200 × 0.060 = 12 N; W = ½ × 12 × 0.060"
+        ],
+        "reject": []
+      },
+      {
+        "point": "New W = 0.36 J",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      }
+    ]
+  },
+  {
+    "id": "q-work-004",
+    "topic_id": "2-3-1",
+    "higher_only": false,
+    "prompt": "Explain how crumple zones and air bags reduce the risk of injury to a car passenger during a collision.",
+    "marks": 4,
+    "assessment_objective": "AO3",
+    "difficulty": 2,
+    "type": "short",
+    "mark_scheme": [
+      {
+        "point": "Crumple zone / air bag increases the TIME taken for the passenger to come to rest",
+        "marks": 1,
+        "accept": [
+          "Extends the duration of the collision"
+        ],
+        "reject": []
+      },
+      {
+        "point": "The CHANGE IN MOMENTUM Δp is the same (because initial and final velocities are unchanged)",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Force = change in momentum / time → if t increases, F decreases (for the same Δp)",
+        "marks": 1,
+        "accept": [
+          "F = Δp/t shows force is reduced"
+        ],
+        "reject": []
+      },
+      {
+        "point": "A smaller force on the passenger reduces injury",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      }
+    ]
+  },
+  {
+    "id": "q-work-005",
+    "topic_id": "2-3-1",
+    "higher_only": true,
+    "prompt": "A roller-coaster car of mass 600 kg starts from rest at the top of a hill 25 m high. Assuming no friction or air resistance, calculate the speed of the car at the bottom of the hill. (g = 10 N/kg)",
+    "marks": 4,
+    "assessment_objective": "AO2",
+    "difficulty": 3,
+    "data_provided": {
+      "m": "600 kg",
+      "h": "25 m",
+      "g": "10 N/kg",
+      "u": "0"
+    },
+    "type": "numeric",
+    "answer_value": 22.36,
+    "answer_unit": "m/s",
+    "tolerance_pct": 2,
+    "requires_unit": true,
+    "working_steps": [
+      "By conservation of energy: GPE lost = KE gained",
+      "mgh = ½ m v²; mass cancels",
+      "v² = 2gh = 2 × 10 × 25 = 500",
+      "v = √500 ≈ 22.4 m/s"
+    ]
+  },
+  {
+    "id": "q-mot-001",
+    "topic_id": "2-4-1",
+    "higher_only": true,
+    "prompt": "A car accelerates uniformly from 5.0 m/s to 25 m/s over a distance of 75 m. Calculate the acceleration of the car.",
+    "marks": 3,
+    "assessment_objective": "AO2",
+    "difficulty": 2,
+    "data_provided": {
+      "u": "5.0 m/s",
+      "v": "25 m/s",
+      "x": "75 m"
+    },
+    "type": "numeric",
+    "answer_value": 4,
+    "answer_unit": "m/s²",
+    "tolerance_pct": 2,
+    "requires_unit": true,
+    "working_steps": [
+      "v² = u² + 2ax",
+      "25² = 5² + 2 × a × 75",
+      "625 − 25 = 150 a → 600 = 150 a",
+      "a = 4.0 m/s²"
+    ]
+  },
+  {
+    "id": "q-mot-002",
+    "topic_id": "2-4-1",
+    "higher_only": true,
+    "prompt": "A 1200 kg car travelling at 15 m/s collides head-on with a stationary 800 kg car. After the collision the two cars stick together and move off as one unit. (a) Calculate the velocity of the cars immediately after the collision. (b) Calculate the TOTAL kinetic energy of the system before and after the collision and comment on whether the collision is elastic or inelastic.",
+    "marks": 6,
+    "assessment_objective": "AO2",
+    "difficulty": 3,
+    "type": "structured",
+    "mark_scheme": [
+      {
+        "point": "Conservation of momentum: m1 u1 + m2 u2 = (m1 + m2) v",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "1200 × 15 + 800 × 0 = (1200 + 800) × v → 18 000 = 2000 v",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "v = 9.0 m/s (in the original direction)",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "KE before = ½ × 1200 × 15² + 0 = 135 000 J (= 1.35 × 10^5 J)",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "KE after = ½ × 2000 × 9² = 81 000 J (= 8.1 × 10^4 J)",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "KE has decreased so the collision is INELASTIC (energy lost to heat, sound, deformation)",
+        "marks": 1,
+        "accept": [],
+        "reject": [
+          "Elastic"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q-mot-003",
+    "topic_id": "2-4-1",
+    "higher_only": true,
+    "prompt": "A 0.045 kg golf ball is struck by a club and leaves the tee with a velocity of 60 m/s. The club is in contact with the ball for 0.0005 s (0.5 ms). Calculate the average force exerted by the club on the ball.",
+    "marks": 3,
+    "assessment_objective": "AO2",
+    "difficulty": 2,
+    "data_provided": {
+      "m": "0.045 kg",
+      "Δv": "60 m/s",
+      "t": "0.0005 s"
+    },
+    "type": "numeric",
+    "answer_value": 5400,
+    "answer_unit": "N",
+    "tolerance_pct": 2,
+    "requires_unit": true,
+    "working_steps": [
+      "Δp = m Δv = 0.045 × 60 = 2.7 kg m/s",
+      "F = Δp / t = 2.7 / 0.0005",
+      "F = 5400 N"
+    ]
+  },
+  {
+    "id": "q-mot-004",
+    "topic_id": "2-4-1",
+    "higher_only": true,
+    "prompt": "A uniform metre rule of weight 2.0 N is pivoted at its 50 cm mark. A 4.0 N weight is hung at the 20 cm mark. (a) Calculate the moment of the 4.0 N weight about the pivot. (b) A second weight W is hung at the 75 cm mark to balance the rule. Calculate W. (Ignore the weight of the rule for the balancing calculation since it acts at the pivot.)",
+    "marks": 5,
+    "assessment_objective": "AO2",
+    "difficulty": 2,
+    "type": "structured",
+    "mark_scheme": [
+      {
+        "point": "Distance of 4.0 N weight from pivot = 50 − 20 = 30 cm = 0.30 m",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Moment = F × d = 4.0 × 0.30 = 1.2 N m (anticlockwise)",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Distance of W from pivot = 75 − 50 = 25 cm = 0.25 m",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Principle of moments: clockwise = anticlockwise → W × 0.25 = 1.2",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "W = 1.2 / 0.25 = 4.8 N",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      }
+    ]
+  },
+  {
+    "id": "q-mot-005",
+    "topic_id": "2-4-1",
+    "higher_only": true,
+    "prompt": "A ball is thrown vertically upwards with an initial velocity of 12 m/s. Take g = 10 m/s² downward and ignore air resistance. Calculate the maximum height the ball reaches above its launch point.",
+    "marks": 3,
+    "assessment_objective": "AO2",
+    "difficulty": 2,
+    "data_provided": {
+      "u": "12 m/s up",
+      "v": "0 m/s at top",
+      "a": "−10 m/s²"
+    },
+    "type": "numeric",
+    "answer_value": 7.2,
+    "answer_unit": "m",
+    "tolerance_pct": 2,
+    "requires_unit": true,
+    "working_steps": [
+      "v² = u² + 2ax with v = 0 at the highest point",
+      "0 = 12² + 2(−10) x → 0 = 144 − 20 x",
+      "x = 144 / 20 = 7.2 m"
+    ]
+  },
+  {
+    "id": "q-star-001",
+    "topic_id": "2-5-1",
+    "higher_only": false,
+    "prompt": "Which stage of stellar evolution comes IMMEDIATELY after the main sequence for a LOW-MASS star (similar to the Sun)?",
+    "marks": 1,
+    "assessment_objective": "AO1",
+    "difficulty": 1,
+    "type": "mcq",
+    "options": [
+      "Supernova",
+      "Red giant",
+      "Neutron star",
+      "Black hole"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "q-star-002",
+    "topic_id": "2-5-1",
+    "higher_only": false,
+    "prompt": "Explain why a main-sequence star like the Sun is stable for billions of years.",
+    "marks": 3,
+    "assessment_objective": "AO1",
+    "difficulty": 2,
+    "type": "short",
+    "mark_scheme": [
+      {
+        "point": "Gravitational forces pull material inwards (gravity tends to make the star collapse)",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Fusion in the core (hydrogen → helium) releases radiation that creates an outward pressure (radiation/gas pressure)",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "When the inward gravitational force equals the outward radiation+gas pressure, the star is in equilibrium / is stable",
+        "marks": 1,
+        "accept": [
+          "Balance is maintained while hydrogen fuel lasts"
+        ],
+        "reject": []
+      }
+    ]
+  },
+  {
+    "id": "q-star-003",
+    "topic_id": "2-5-1",
+    "higher_only": true,
+    "prompt": "The Hertzsprung-Russell (H-R) diagram is used to classify stars. (a) State the two physical properties of stars plotted on the H-R diagram. (b) Describe where on the diagram you would find: (i) main-sequence stars, (ii) red giants, (iii) white dwarfs.",
+    "marks": 5,
+    "assessment_objective": "AO1",
+    "difficulty": 3,
+    "type": "structured",
+    "mark_scheme": [
+      {
+        "point": "Luminosity (or brightness) on the y-axis",
+        "marks": 1,
+        "accept": [
+          "Power output"
+        ],
+        "reject": []
+      },
+      {
+        "point": "Surface temperature on the x-axis (with temperature INCREASING to the left)",
+        "marks": 1,
+        "accept": [
+          "Spectral class O-M from left to right"
+        ],
+        "reject": []
+      },
+      {
+        "point": "Main sequence: a diagonal band from top-left (hot, bright) to bottom-right (cool, dim)",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Red giants: top-right (cool BUT very bright/luminous)",
+        "marks": 1,
+        "accept": [],
+        "reject": [
+          "Bottom right"
+        ]
+      },
+      {
+        "point": "White dwarfs: bottom-left (hot but dim/small)",
+        "marks": 1,
+        "accept": [],
+        "reject": [
+          "Top left"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q-star-004",
+    "topic_id": "2-5-1",
+    "higher_only": false,
+    "prompt": "Light from the Sun takes 500 s to reach Earth. The speed of light is 3 × 10^8 m/s. Calculate the distance from the Earth to the Sun in metres. Then convert this distance into kilometres.",
+    "marks": 3,
+    "assessment_objective": "AO2",
+    "difficulty": 1,
+    "data_provided": {
+      "t": "500 s",
+      "c": "3 × 10^8 m/s"
+    },
+    "type": "numeric",
+    "answer_value": 150000000,
+    "answer_unit": "km",
+    "tolerance_pct": 2,
+    "requires_unit": true,
+    "working_steps": [
+      "d = speed × time = 3 × 10^8 × 500",
+      "d = 1.5 × 10^11 m",
+      "d = 1.5 × 10^8 km = 150 000 000 km (which is ~1 AU)"
+    ]
+  },
+  {
+    "id": "q-univ-001",
+    "topic_id": "2-6-1",
+    "higher_only": true,
+    "prompt": "Explain what is meant by 'cosmological red shift' and what it tells us about the Universe.",
+    "marks": 4,
+    "assessment_objective": "AO3",
+    "difficulty": 3,
+    "type": "short",
+    "mark_scheme": [
+      {
+        "point": "Cosmological red shift is the observation that absorption (or emission) lines from distant galaxies are shifted to longer wavelengths (towards the red end of the spectrum)",
+        "marks": 1,
+        "accept": [
+          "Wavelengths from distant galaxies are stretched"
+        ],
+        "reject": []
+      },
+      {
+        "point": "The shift is greater for galaxies that are further away",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "It is caused by the expansion of space stretching the wavelengths of the light as it travels",
+        "marks": 1,
+        "accept": [
+          "Galaxies are moving away from us / each other"
+        ],
+        "reject": []
+      },
+      {
+        "point": "This is direct evidence that the Universe is expanding, and supports the Big Bang model",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      }
+    ]
+  },
+  {
+    "id": "q-univ-002",
+    "topic_id": "2-6-1",
+    "higher_only": true,
+    "prompt": "Describe the main pieces of evidence for the Big Bang model of the origin of the Universe. [6 QER]",
+    "marks": 6,
+    "assessment_objective": "AO3",
+    "difficulty": 3,
+    "type": "qer6",
+    "mark_scheme": [
+      {
+        "point": "Indicative content: The Big Bang model proposes that the Universe began as a hot, dense, very small region about 13.8 billion years ago and has been expanding ever since. (1) Cosmological red shift: Edwin Hubble in the 1920s measured the spectra of distant galaxies and found that their absorption lines were shifted to longer wavelengths (towards the red). The further away the galaxy, the larger the red shift. This shows that distant galaxies are moving away from us, and that the more distant they are, the faster they recede - exactly what would be expected if all space is expanding. (2) Cosmic Microwave Background (CMB) radiation: In 1964 Penzias and Wilson discovered a faint microwave radiation that comes uniformly from all directions in space. The Big Bang model predicts that the very hot, dense early Universe would have produced high-energy radiation that has since been stretched (red-shifted) by the expansion of space into the microwave region. The observed CMB has exactly the temperature (~2.7 K) and uniformity predicted, strongly supporting the hot Big Bang model. (3) Abundance of light elements (a stretch point but worth mentioning): the Big Bang predicts specific ratios of hydrogen, helium, and traces of lithium that match observations across the Universe.",
+        "marks": 1,
+        "accept": [
+          "red shift",
+          "expansion",
+          "Hubble",
+          "cosmic microwave background",
+          "CMB",
+          "hot dense early Universe",
+          "13.8 billion years",
+          "wavelength stretched"
+        ],
+        "reject": []
+      },
+      {
+        "point": "Level 3 (5-6 marks): Detailed account of BOTH the cosmological red shift (with link to expansion) AND the cosmic microwave background (with link to hot, dense early universe). Sustained, coherent, accurate terminology, accurate SPaG.",
+        "marks": 5,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Level 2 (3-4 marks): Both pieces of evidence mentioned but with limited detail, OR one piece in full detail.",
+        "marks": 3,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Level 1 (1-2 marks): Basic mention of red shift OR Big Bang. Limited reasoning.",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      }
+    ]
+  },
+  {
+    "id": "q-univ-003",
+    "topic_id": "2-6-1",
+    "higher_only": false,
+    "prompt": "A particular hydrogen absorption line is measured at 656 nm in the laboratory but is observed at 689 nm in light from a distant galaxy. What does this observation tell us about the galaxy?",
+    "marks": 1,
+    "assessment_objective": "AO2",
+    "difficulty": 1,
+    "type": "mcq",
+    "options": [
+      "The galaxy is moving towards us (blue shift)",
+      "The galaxy is moving away from us (red shift)",
+      "The galaxy is hotter than the Sun",
+      "The galaxy is made of different elements"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "q-rad-001",
+    "topic_id": "2-7-1",
+    "higher_only": false,
+    "prompt": "Which of the following best describes a BETA particle?",
+    "marks": 1,
+    "assessment_objective": "AO1",
+    "difficulty": 1,
+    "type": "mcq",
+    "options": [
+      "A helium nucleus",
+      "A high-energy electron emitted from the nucleus",
+      "A high-energy electromagnetic wave",
+      "A high-energy proton"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "q-rad-002",
+    "topic_id": "2-7-1",
+    "higher_only": true,
+    "prompt": "Complete and balance the following alpha decay equation, identifying the mass and atomic numbers of the daughter nucleus X.\n\n  ²²⁶₈₈Ra → X + ⁴₂He²⁺",
+    "marks": 3,
+    "assessment_objective": "AO2",
+    "difficulty": 2,
+    "type": "short",
+    "mark_scheme": [
+      {
+        "point": "Mass number of X = 226 − 4 = 222",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Proton (atomic) number of X = 88 − 2 = 86",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "X is ²²²₈₆Rn (radon)",
+        "marks": 1,
+        "accept": [
+          "Rn",
+          "Radon-222"
+        ],
+        "reject": [
+          "Ra"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q-rad-003",
+    "topic_id": "2-7-1",
+    "higher_only": false,
+    "prompt": "Three sources A, B and C emit either alpha, beta or gamma radiation. A student finds that: source A is stopped by paper; source B is stopped by 3 mm of aluminium but passes through paper; source C is reduced (but not stopped) by 5 cm of lead. (a) Identify the radiation emitted by each source. (b) State which type carries the greatest risk if the source is INHALED, and explain why.",
+    "marks": 5,
+    "assessment_objective": "AO3",
+    "difficulty": 2,
+    "type": "structured",
+    "mark_scheme": [
+      {
+        "point": "A = alpha",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "B = beta",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "C = gamma",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Alpha carries greatest risk if inhaled",
+        "marks": 1,
+        "accept": [],
+        "reject": [
+          "Gamma"
+        ]
+      },
+      {
+        "point": "Because alpha is the most ionising and so causes the most damage to cells when in direct contact with tissue (it has nowhere to escape to from inside the body)",
+        "marks": 1,
+        "accept": [
+          "Alpha is heavily ionising/short range; once inside it deposits all its energy in nearby cells"
+        ],
+        "reject": []
+      }
+    ]
+  },
+  {
+    "id": "q-rad-004",
+    "topic_id": "2-7-1",
+    "higher_only": false,
+    "prompt": "Define the term 'isotope'.",
+    "marks": 2,
+    "assessment_objective": "AO1",
+    "difficulty": 1,
+    "type": "short",
+    "mark_scheme": [
+      {
+        "point": "Isotopes are atoms of the same element",
+        "marks": 1,
+        "accept": [
+          "Have the same number of protons / same proton number"
+        ],
+        "reject": []
+      },
+      {
+        "point": "with different numbers of neutrons (i.e. different mass/nucleon numbers)",
+        "marks": 1,
+        "accept": [],
+        "reject": [
+          "Different number of electrons"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q-rad-005",
+    "topic_id": "2-7-1",
+    "higher_only": false,
+    "prompt": "A Geiger-Müller tube records the following counts (per minute) on five successive 1-minute intervals with NO source present: 18, 22, 19, 25, 16. (a) Calculate the mean background count rate. (b) The same tube, with a weak source present, records a count of 142 per minute. State the corrected count rate (above background) for the source.",
+    "marks": 3,
+    "assessment_objective": "AO2",
+    "difficulty": 2,
+    "data_provided": {
+      "background_readings": "18, 22, 19, 25, 16",
+      "with_source": "142"
+    },
+    "type": "numeric",
+    "answer_value": 122,
+    "answer_unit": "counts/min",
+    "tolerance_pct": 2,
+    "requires_unit": true,
+    "working_steps": [
+      "Mean background = (18+22+19+25+16)/5 = 100/5 = 20 counts/min",
+      "Corrected = 142 − 20",
+      "= 122 counts/min"
+    ]
+  },
+  {
+    "id": "q-hl-001",
+    "topic_id": "2-8-1",
+    "higher_only": false,
+    "prompt": "A radioactive isotope has a half-life of 6 hours. A pure sample initially has an activity of 800 Bq. Calculate its activity after 24 hours.",
+    "marks": 3,
+    "assessment_objective": "AO2",
+    "difficulty": 2,
+    "data_provided": {
+      "T_half": "6 hours",
+      "A_0": "800 Bq",
+      "t": "24 hours"
+    },
+    "type": "numeric",
+    "answer_value": 50,
+    "answer_unit": "Bq",
+    "tolerance_pct": 2,
+    "requires_unit": true,
+    "working_steps": [
+      "Number of half-lives = 24 / 6 = 4",
+      "Remaining fraction = (1/2)^4 = 1/16",
+      "A = 800 / 16 = 50 Bq"
+    ]
+  },
+  {
+    "id": "q-hl-002",
+    "topic_id": "2-8-1",
+    "higher_only": true,
+    "prompt": "Iodine-131 is used as a medical tracer to study the function of the thyroid gland. It has a half-life of 8 days and emits both beta and gamma radiation. (a) State and explain TWO reasons why iodine-131 is suitable as a medical tracer. (b) A patient is given a dose of iodine-131 with initial activity 4800 Bq. Calculate the activity that remains in the body 32 days later (assume the iodine is not excreted).",
+    "marks": 6,
+    "assessment_objective": "AO2",
+    "difficulty": 2,
+    "type": "structured",
+    "mark_scheme": [
+      {
+        "point": "Reason 1: short half-life (8 days)",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Linked explanation: so the activity decays quickly and the patient is not exposed for a long time",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Reason 2: emits gamma radiation",
+        "marks": 1,
+        "accept": [
+          "The gamma radiation is highly penetrating"
+        ],
+        "reject": []
+      },
+      {
+        "point": "Linked explanation: gamma can pass out of the body to be detected by an external detector",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Number of half-lives = 32 / 8 = 4 → factor (1/2)^4 = 1/16",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Activity = 4800 / 16 = 300 Bq",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      }
+    ]
+  },
+  {
+    "id": "q-hl-003",
+    "topic_id": "2-8-1",
+    "higher_only": true,
+    "prompt": "Carbon-14 has a half-life of 5730 years. A wooden artefact from an archaeological site has an activity that is 25% of the activity of an equivalent piece of fresh wood. Estimate the age of the artefact.",
+    "marks": 3,
+    "assessment_objective": "AO2",
+    "difficulty": 2,
+    "data_provided": {
+      "T_half": "5730 years",
+      "fraction_remaining": "25% = 1/4"
+    },
+    "type": "numeric",
+    "answer_value": 11460,
+    "answer_unit": "years",
+    "tolerance_pct": 2,
+    "requires_unit": true,
+    "working_steps": [
+      "25% = (1/2)^n → n = 2 half-lives have elapsed",
+      "Age = 2 × 5730",
+      "Age = 11 460 years"
+    ]
+  },
+  {
+    "id": "q-hl-004",
+    "topic_id": "2-8-1",
+    "higher_only": false,
+    "prompt": "After 3 half-lives have elapsed, what FRACTION of the original radioactive nuclei in a pure sample remain undecayed?",
+    "marks": 1,
+    "assessment_objective": "AO1",
+    "difficulty": 1,
+    "type": "mcq",
+    "options": [
+      "1/3",
+      "1/6",
+      "1/8",
+      "1/9"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "q-hl-005",
+    "topic_id": "2-8-1",
+    "higher_only": true,
+    "prompt": "Explain why repeat readings of count rate from a radioactive source are necessary, even when the source's average activity is steady.",
+    "marks": 3,
+    "assessment_objective": "AO3",
+    "difficulty": 2,
+    "type": "short",
+    "mark_scheme": [
+      {
+        "point": "Radioactive decay is a random process",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "So individual counts in successive equal time intervals will fluctuate (will not be the same each time)",
+        "marks": 1,
+        "accept": [
+          "Statistical variation in the count"
+        ],
+        "reject": []
+      },
+      {
+        "point": "Taking repeat readings and averaging reduces the effect of this random variation and gives a more reliable / more accurate value for the count rate",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      }
+    ]
+  },
+  {
+    "id": "q-nuc-001",
+    "topic_id": "2-9-1",
+    "higher_only": true,
+    "prompt": "Complete the nuclear equation for a fission reaction:\n\n  ²³⁵₉₂U + ¹₀n → ¹⁴¹₅₆Ba + ⁹²₃₆Kr + x ¹₀n + energy.\n\n(a) Calculate the number of neutrons x released. (b) Explain how this release of neutrons can lead to a sustained chain reaction. (c) State the role of (i) the control rods and (ii) the moderator in a nuclear fission reactor.",
+    "marks": 6,
+    "assessment_objective": "AO2",
+    "difficulty": 3,
+    "type": "structured",
+    "mark_scheme": [
+      {
+        "point": "Conservation of mass number: 235 + 1 = 141 + 92 + x → 236 = 233 + x → x = 3",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "(Conservation of proton number checks: 92 + 0 = 56 + 36 + 0 ✓)",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "The neutrons released can each go on to be absorbed by other uranium-235 nuclei",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Causing further fission events that release more neutrons → exponential growth = chain reaction",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Control rods absorb neutrons (boron/cadmium); lowering them reduces the rate of fission so the reactor can be controlled (or shut down)",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Moderator (water or graphite) slows down the fast neutrons to thermal speeds so they are more likely to be absorbed by U-235 (which prefers slow neutrons)",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      }
+    ]
+  },
+  {
+    "id": "q-nuc-002",
+    "topic_id": "2-9-1",
+    "higher_only": true,
+    "prompt": "State TWO advantages and ONE disadvantage of nuclear FUSION compared to nuclear FISSION as a future source of energy.",
+    "marks": 3,
+    "assessment_objective": "AO3",
+    "difficulty": 2,
+    "type": "short",
+    "mark_scheme": [
+      {
+        "point": "Any one advantage: fuel (hydrogen isotopes) is virtually unlimited (deuterium in seawater) OR no long-lived high-level radioactive waste OR very high energy yield per kg of fuel",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Any DIFFERENT advantage from list above",
+        "marks": 1,
+        "accept": [],
+        "reject": [
+          "Repeating the same point"
+        ]
+      },
+      {
+        "point": "Disadvantage: requires extremely high temperatures (~10^8 K) to overcome electrostatic repulsion OR difficult to confine the plasma OR no commercially viable fusion reactor yet exists",
+        "marks": 1,
+        "accept": [],
+        "reject": [
+          "Produces dangerous radiation (so does fission)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q-nuc-003",
+    "topic_id": "2-9-1",
+    "higher_only": true,
+    "prompt": "Compare nuclear fission and nuclear fusion. Your answer should describe what each process is, give an example of the reactants and products for each, and discuss why fusion is much harder to use as a practical energy source on Earth than fission. [6 QER]",
+    "marks": 6,
+    "assessment_objective": "AO3",
+    "difficulty": 3,
+    "type": "qer6",
+    "mark_scheme": [
+      {
+        "point": "Indicative content: Fission is the SPLITTING of a heavy unstable nucleus (e.g. uranium-235 ²³⁵₉₂U) when it absorbs a slow neutron, producing two smaller daughter nuclei (e.g. barium-141 and krypton-92), 2-3 fast neutrons, and a large release of energy. The released neutrons can sustain a chain reaction. Fission powers existing nuclear power stations. Fusion is the JOINING of two light nuclei (e.g. deuterium ²₁H and tritium ³₁H) to form a heavier nucleus (helium ⁴₂He) plus a neutron and a large release of energy per unit mass — much more than fission per kg of fuel. Fusion powers stars including the Sun. Fusion is harder to achieve on Earth because the light nuclei are both positively charged and so repel each other electrostatically. To overcome this and bring nuclei close enough for the strong nuclear force to act, the plasma must be heated to ~10^8 K. At such temperatures no normal container can hold the plasma, so magnetic confinement (e.g. tokamak) is used. Maintaining these conditions stably for long enough to extract net energy has not yet been done commercially. By contrast, fission only requires slowing neutrons (with a moderator) and absorbing them (control rods) to control the chain reaction — much more tractable engineering.",
+        "marks": 1,
+        "accept": [
+          "split",
+          "join",
+          "chain reaction",
+          "uranium-235",
+          "deuterium",
+          "tritium",
+          "neutron",
+          "high temperature",
+          "plasma",
+          "electrostatic repulsion",
+          "magnetic confinement"
+        ],
+        "reject": []
+      },
+      {
+        "point": "Level 3 (5-6 marks): Clear definitions of both fission and fusion with correct example reactants/products and a substantive explanation of why fusion is harder (electrostatic repulsion + need for very high temperature + plasma confinement). Sustained, coherent, accurate terminology and SPaG.",
+        "marks": 5,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Level 2 (3-4 marks): Both processes described qualitatively, with some example. One or two reasons given for the difficulty of fusion.",
+        "marks": 3,
+        "accept": [],
+        "reject": []
+      },
+      {
+        "point": "Level 1 (1-2 marks): Basic statement that fission splits and fusion joins. Limited examples or reasoning.",
+        "marks": 1,
+        "accept": [],
+        "reject": []
+      }
+    ]
+  },
+  {
+    "id": "q-nuc-004",
+    "topic_id": "2-9-1",
+    "higher_only": true,
+    "prompt": "What is the role of the MODERATOR in a nuclear fission reactor?",
+    "marks": 1,
+    "assessment_objective": "AO1",
+    "difficulty": 2,
+    "type": "mcq",
+    "options": [
+      "To absorb neutrons and slow the rate of fission down",
+      "To slow fast neutrons so they can be absorbed by U-235 to cause further fission",
+      "To absorb gamma radiation produced in the core",
+      "To convert kinetic energy of neutrons into electrical energy"
+    ],
+    "correct_index": 1
   }
 ]
